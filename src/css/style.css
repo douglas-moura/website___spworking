@@ -15,6 +15,16 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 110%;
 }
 
+header {
+	z-index: 900;
+	position: fixed;
+	width: 100%;
+}
+
+main {
+	z-index: 800;
+}
+
 main, section {
 	box-sizing: border-box;
 	display: flex;
@@ -47,6 +57,10 @@ section .sessao-conteudo {
 	justify-content: space-between !important;
 }
 
+section .coluna-100 div {
+	width: 100% !important;
+}
+
 section .coluna-50_50 div {
 	width: 49% !important;
 }
@@ -57,6 +71,10 @@ section .coluna-33_33_33 div {
 
 section .coluna-25_25_25_25 div {
 	width: 24% !important;
+}
+
+section .coluna-16_16_16_16_16_16 div {
+	width: 15% !important;
 }
 
 footer {
@@ -90,13 +108,49 @@ ul li {
 }
 
 #menu-desktop ul {
-	padding: 0;
+	padding: .5rem !important;
+	background-color: white;
+	border-radius: .5rem;
 }
 
 #menu-desktop ul li {
 	list-style-type: none;
 	display: inline;
-	margin-left: 2rem;
+	margin: 0 1rem;
+}
+
+#banner {
+	padding: 0;
+	height: 30rem;
+}
+
+#banner .slideshow {
+	position: absolute;
+	height: 30rem;
+	width: 100%;
+	display: flex;
+	/*overflow: hidden;*/
+}
+
+#banner .slideshow div {
+	position: absolute;
+	width: 90%;
+	margin: auto;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+}
+
+#banner .slideshow .slide-1 {
+	background-image: url("/src/img/pexels-proxyclick-visitor-management-system-2451567.jpg")
+}
+
+#banner .slideshow .slide-2 {
+	background-image: url("/src/img/pexels-proxyclick-visitor-management-system-2451313.jpg")
+}
+
+#banner .slideshow div:last-of-type {
+	
 }
 
 #banner h1 {
@@ -105,14 +159,36 @@ ul li {
 	margin: 3rem 0;
 }
 
-#servicos>div {
-	width: 60% !important;
+#servicos {
+	z-index: 801;
+	margin-top: -5rem;
 }
 
 #servicos .sessao-conteudo .servico-coworking {
-	background-color: lightgray;
-	padding: 2rem;
-	border-radius: .2rem;
+	background-color: #222;
+	padding: 2rem 1rem;
+	border-radius: .5rem;
 	margin-bottom: 1rem;
-	text-align: center;
+	text-align: center !important;
+	color: lightgray;
+}
+
+#servicos .sessao-conteudo .servico-coworking ion-icon {
+  font-size: 2rem;
+  --ionicon-stroke-width: 2rem;
+  margin-bottom: 1rem;
+  color: lightseagreen;
+}
+
+#galeria .sessao-conteudo {
+	flex-wrap: wrap;
+}
+
+#galeria .sessao-conteudo div {
+	margin-bottom: 1rem;
+}
+
+#galeria .sessao-conteudo div picture img {
+	width: 100%;
+	border-radius: .5rem;
 }

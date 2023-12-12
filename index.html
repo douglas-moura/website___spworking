@@ -11,6 +11,10 @@
 		
 		<!-- Custom Styles -->
 		<link rel="stylesheet" href="src/css/style.css">
+		<script src="https://unpkg.com/feather-icons"></script>
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 	</head>
 	<body>
 		<header>
@@ -18,52 +22,97 @@
 				<img src="" alt="">
 				<ul>
 					<li>Home</li>
-					<li>Serviços</li>
 					<li>Espaço</li>
 					<li>Depoimentos</li>
+					<li>Planos</li>
 					<li>Localização</li>
 				</ul>
 			</nav>
 		</header>
 		<main>
 			<section id="banner">
-				<div class="sessao-conteudo coluna-50_50">
-					<div></div>
-					<div>
-						<h1>Titulo do Site SPWorking</h4>
+				<div class="sessao-conteudo coluna-100 slideshow">
+					<div class="sld slide-1">
+						<h3>Teste</h3>
+					</div>
+					<div class="sld slide-2">
+						<h3>Teste 02</h3>
 					</div>
 				</div>
 			</section>
 			<section id="servicos">
-				<div class="sessao-titulo">
-					<h2>Serviços</h2>
-				</div>
-				<div class="sessao-conteudo coluna-33_33_33">
+				<div class="sessao-conteudo coluna-16_16_16_16_16_16">
 					<div class="servico-coworking">
-						<h4>2 Redes Wi-Fi</h4>
+						<ion-icon name="wifi-outline"></ion-icon>
+						<h5>2 Redes<br>Wi-Fi</h5>
 					</div>
 					<div class="servico-coworking">
-						<h4>Ar-condicionado</h4>
+						<ion-icon name="snow-outline"></ion-icon>
+						<h5>Ambiente Climatizado</h5>
 					</div>
 					<div class="servico-coworking">
-						<h4>Área de Descanso</h4>
-					</div>
-				</div>
-				<div class="sessao-conteudo coluna-33_33_33">
-					<div class="servico-coworking">
-						<h4>Almoço (opcional)</h4>
+						<ion-icon name="chatbubbles-outline"></ion-icon>
+						<h5>Espaço de Convivência</h5>
 					</div>
 					<div class="servico-coworking">
-						<h4>Sala de Reunião</h4>
+						<ion-icon name="fast-food-outline"></ion-icon>
+						<h5>Almoço (opcional)</h5>
 					</div>
 					<div class="servico-coworking">
-						<h4>Café e Água</h4>
+						<ion-icon name="people-outline"></ion-icon>
+						<h5>Sala de<br>Reunião</h5>
+					</div>
+					<div class="servico-coworking">
+						<ion-icon name="cafe-outline"></ion-icon>
+						<h5>Café, Chá e Água</h5>
 					</div>
 				</div>
 			</section>
 			<section id="galeria">
 				<div class="sessao-titulo">
 					<h2>Galeria</h2>
+				</div>
+				<div class="sessao-conteudo coluna-25_25_25_25">
+					<div>
+						<picture>
+							<img src="/src/img/pexels-proxyclick-visitor-management-system-2451313.jpg" alt="">
+						</picture>
+					</div>
+					<div>
+						<picture>
+							<img src="/src/img/pexels-proxyclick-visitor-management-system-2451616.jpg" alt="">
+						</picture>
+					</div>
+					<div>
+						<picture>
+							<img src="/src/img/pexels-proxyclick-visitor-management-system-2451567.jpg" alt="">
+						</picture>
+					</div>
+					<div>
+						<picture>
+							<img src="/src/img/pexels-proxyclick-visitor-management-system-2451566 (1).jpg" alt="">
+						</picture>
+					</div>
+					<div>
+						<picture>
+							<img src="/src/img/pexels-proxyclick-visitor-management-system-2451313.jpg" alt="">
+						</picture>
+					</div>
+					<div>
+						<picture>
+							<img src="/src/img/pexels-proxyclick-visitor-management-system-2451313.jpg" alt="">
+						</picture>
+					</div>
+					<div>
+						<picture>
+							<img src="/src/img/pexels-proxyclick-visitor-management-system-2451313.jpg" alt="">
+						</picture>
+					</div>
+					<div>
+						<picture>
+							<img src="/src/img/pexels-proxyclick-visitor-management-system-2451313.jpg" alt="">
+						</picture>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -72,13 +121,11 @@
 				<div class="sessao-conteudo coluna-25_25_25_25">
 					<div>
 						<h3>Localização</h3>
-						<p>
-							Av. Francisco Morato, 1022
-							<br>
-							CEP 87654-321
-							<br>
-							Butantã - São Paulo 
-						</p>
+						<ul>
+							<li>Av. Francisco Morato, 1022</li>
+							<li>CEP 87654-321</li>
+							<li>Butantã - São Paulo</li>
+						</ul>
 					</div>
 					<div>
 						<h3>Contato</h3>
@@ -88,15 +135,27 @@
 						</ul>
 					</div>
 					<div>
-						Foot 03
+						<h3>Redes Sociais</h3>
+						<ul>
+							<li><i data-feather="facebook" height="16" stroke-width="2"></i>Facebook</li>
+							<li><i data-feather="instagram" height="16" stroke-width="2"></i>Instagram</li>
+							<li><i data-feather="linkedin" height="16" stroke-width="2"></i>Linkedin</li>
+						</ul>
 					</div>
 					<div>
-						Foot 04
+						<h3>Parcerias</h3>
+						<ul>
+							<li>Woba</li>
+							<li>Coworking Brasil</li>
+						</ul>
 					</div>
 				</div>
 			</section>
 		</footer>
 		<!-- Project -->
 		<script src="src/js/main.js"></script>
+		<script>
+			feather.replace();
+		</script>
 	</body>
 </html>
