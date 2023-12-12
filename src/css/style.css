@@ -138,6 +138,9 @@ ul li {
 	padding: .5rem !important;
 	background-color: white;
 	border-radius: .5rem;
+	-webkit-box-shadow: 3px 3px 20px 5px rgba(0,0,0,0.15);
+	-moz-box-shadow: 3px 3px 20px 5px rgba(0,0,0,0.15);
+	box-shadow: 3px 3px 20px 5px rgba(0,0,0,0.15);
 }
 
 #menu-desktop ul li {
@@ -157,16 +160,17 @@ ul li {
 	/*overflow: hidden;*/
 }
 
-#banner .slideshow div {
+#banner .slideshow .sld {
+	background-position: center center;
+    align-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+	background-size: cover;
 	position: absolute;
+	padding: 8rem 20%;
+	display: flex;
 	margin: auto;
 	height: 100%;
-	background-size: cover;
-	background-position: center center;
-}
-	
-#banner .slideshow div {
-	padding: 8rem 20%;
 }
 
 #banner .slideshow .slide-1 {
@@ -177,10 +181,9 @@ ul li {
 	background-image: url("../img/pexels-proxyclick-visitor-management-system-2451313.jpg")
 }
 
-#banner .slideshow div h1 {
+#banner .slideshow .sld h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
-	margin: 3rem 0;
 }
 
 #servicos {
