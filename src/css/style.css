@@ -165,7 +165,7 @@ ul li {
 	z-index: 790;
 	cursor: pointer;
 	background-color: lightseagreen;
-	margin: auto 1rem;
+	margin: auto 2rem;
 	padding: 1rem;
 	border-radius: 50%;
 	display: flex;
@@ -247,4 +247,15 @@ ul li {
 #galeria .sessao-conteudo div picture img {
 	width: 100%;
 	border-radius: .5rem;
+}
+
+/* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
 }
