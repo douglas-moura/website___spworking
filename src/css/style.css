@@ -157,7 +157,23 @@ ul li {
 	position: absolute;
 	width: 100%;
 	display: flex;
+	align-items: center;
 	/*overflow: hidden;*/
+}
+
+#banner .slideshow span {
+	z-index: 790;
+	cursor: pointer;
+	background-color: lightseagreen;
+	margin: auto 1rem;
+	padding: 1rem;
+	border-radius: 50%;
+	display: flex;
+}
+
+#banner .slideshow span ion-icon {
+	font-size: 2rem;
+	color: white;
 }
 
 #banner .slideshow .sld {
@@ -173,12 +189,19 @@ ul li {
 	height: 100%;
 }
 
+#banner .slideshow .slide-0 {
+	background-image: url("../img/pexels-proxyclick-visitor-management-system-2451567.jpg");
+	z-index: 789;
+}
+
 #banner .slideshow .slide-1 {
-	background-image: url("../img/pexels-proxyclick-visitor-management-system-2451567.jpg")
+	background-image: url("../img/pexels-proxyclick-visitor-management-system-2451313.jpg");
+	z-index: 788;
 }
 
 #banner .slideshow .slide-2 {
-	background-image: url("../img/pexels-proxyclick-visitor-management-system-2451313.jpg")
+	background-image: url("../img/pexels-proxyclick-visitor-management-system-2451616.jpg");
+	z-index: 787;
 }
 
 #banner .slideshow .sld h1 {
@@ -187,7 +210,7 @@ ul li {
 }
 
 #servicos {
-	z-index: 801;
+	z-index: 790;
 	margin-top: -8rem;
 }
 
