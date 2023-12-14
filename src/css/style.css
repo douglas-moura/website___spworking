@@ -251,10 +251,10 @@ ul li {
 }
 
 #servicos .sessao-conteudo .servico-coworking {
-	background-color: #222;
+	background-color: #eee;
 	padding: 2rem 1rem;
 	border-radius: .5rem;
-	color: lightgray;
+	color: #333;
 	height: 12rem;
 	display: flex;
 	flex-direction: column;	
