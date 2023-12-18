@@ -13,6 +13,10 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+	body {
+		font-size: 10px !important;
+	}
+	
 	header nav,
 	section>div {
 		margin: 0 auto;
@@ -29,6 +33,10 @@
 		--ionicon-stroke-width: 1.5rem;
 		margin-bottom: 1rem;
 	}
+	
+	#depoimentos .sessao-conteudo div span {
+		font-size: .5rem !important;
+	}
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -36,6 +44,10 @@
 }
 
 @media only screen and (min-width: 1280px) {
+	body {
+		font-size: 14px
+	}
+	
 	header nav,
 	section>div {
 		width: calc(1280px * .9);
@@ -51,10 +63,13 @@
 		--ionicon-stroke-width: 1.5rem;
 		margin-bottom: 1rem;
 	}
+	
+	#depoimentos .sessao-conteudo div span {
+		font-size: .6rem !important
+	}
 }
 	
 body {
-    font-size: 14px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -77,6 +92,7 @@ section>div {
 
 main {
 	z-index: 800;
+	font-size: .8rem;
 }
 
 main, section {
@@ -247,7 +263,7 @@ ul li {
 
 #servicos {
 	z-index: 790;
-	margin-top: -8rem;
+	margin-top: -7rem;
 }
 
 #servicos .sessao-conteudo .servico-coworking {
@@ -255,7 +271,6 @@ ul li {
 	padding: 2rem 1rem;
 	border-radius: .5rem;
 	color: #333;
-	height: 12rem;
 	display: flex;
 	flex-direction: column;	
     justify-content: center;
@@ -307,7 +322,6 @@ ul li {
 }
 
 #depoimentos .sessao-conteudo div span {
-	font-size: .6rem !important;
 	margin-left: .7rem !important;
 }
 
