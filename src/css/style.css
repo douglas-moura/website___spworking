@@ -251,7 +251,7 @@ ul li {
 }
 
 #servicos .sessao-conteudo .servico-coworking {
-	background-color: #eee;
+	background-color: var(--cor-primaria);
 	padding: 2rem 1rem;
 	border-radius: .5rem;
 	color: #333;
@@ -269,7 +269,7 @@ ul li {
 }
 
 #servicos .sessao-conteudo .servico-coworking ion-icon {
-  color: var(--cor-primaria);
+  color: white;
 }
 
 #galeria .sessao-conteudo {
@@ -283,6 +283,38 @@ ul li {
 #galeria .sessao-conteudo div picture img {
 	width: 100%;
 	border-radius: .5rem;
+}
+
+#depoimentos .sessao-conteudo {
+	flex-wrap: wrap !important;
+}
+
+#depoimentos .sessao-conteudo div {
+	color: var(--cor-primaria);
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+
+#depoimentos .sessao-conteudo div:hover h3 {
+	padding-left: .8rem;
+}
+
+#depoimentos .sessao-conteudo div h3 {
+	padding-left: .5rem;
+	border-left: .2rem solid var(--cor-primaria);
+	transition: .2s;
+}
+
+#depoimentos .sessao-conteudo div span {
+	font-size: .6rem !important;
+	margin-left: .7rem !important;
+}
+
+#depoimentos .sessao-conteudo div p {
+	font-style: italic;
+	font-size: .8rem !important;
+	margin-top: 1rem !important;
 }
 
 /* Fading animation */
