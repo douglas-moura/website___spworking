@@ -15,6 +15,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -177,13 +178,13 @@
 				<div class="sessao-titulo">
 					<h2>Planos</h2>
 				</div>
-				<div class="sessao-conteudo coluna-100">
+				<div class="sessao-conteudo coluna-60_40">
 					<div>
 						<table>
 							<thead>
 								<tr>
 									<th></th>
-									<th>Capacidade</th>
+									<th>Capacidade<br>(pessoas)</th>
 									<th>Diária</th>
 									<th>Plano Semanal</th>
 									<th>Plano Mensal</th>
@@ -192,48 +193,48 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>Mesa Individual</td>
-									<td>1 pessoa</td>
+									<td>Mesa<br>Individual</td>
+									<td>1</td>
 									<td>R$ 49</td>
 									<td>R$ 290</td>
 									<td>R$ 490</td>
 									<td>-</td>
 								</tr>
 								<tr>
-									<td>Sala Privativa 01</td>
-									<td>4 pessoas</td>
+									<td>Sala<br>Privativa 01</td>
+									<td>4</td>
 									<td>-</td>
 									<td>-</td>
 									<td>R$ 1.599</td>
 									<td>R$ 15.588</td>
 								</tr>
 								<tr>
-									<td>Sala Privativa 02</td>
-									<td>6 pessoas</td>
+									<td>Sala<br>Privativa 02</td>
+									<td>6</td>
 									<td>-</td>
 									<td>-</td>
 									<td>R$ 2.599</td>
 									<td>R$ 26.388</td>
 								</tr>
 								<tr>
-									<td>Sala Privativa 03</td>
-									<td>12 pessoas</td>
+									<td>Sala<br>Privativa 03</td>
+									<td>12</td>
 									<td>-</td>
 									<td>-</td>
 									<td>R$ 3.399</td>
 									<td>R$ 38.388</td>
 								</tr>
 								<tr>
-									<td>Sala de Reunião 01</td>
-									<td>6 pessoas</td>
+									<td>Sala de<br>Reunião 01</td>
+									<td>6</td>
 									<td>R$ 199</td>
 									<td>-</td>
 									<td>-</td>
 									<td>-</td>
 								</tr>
 								<tr>
-									<td>Sala de Reunião 02</td>
-									<td>10 pessoas</td>
+									<td>Sala de<br>Reunião 02</td>
+									<td>10</td>
 									<td>R$ 399</td>
 									<td>-</td>
 									<td>-</td>
@@ -241,6 +242,21 @@
 								</tr>
 							</tbody>
 						</table>
+					</div>
+					<div id="calendario">
+						<h3>Agende uma visita</h3>
+						<p>Selecione uma data abaixo e agende uma visita para conhecer o SPWorking</p>
+						<br>
+						<h5 id="info-mes"></h5>
+						<div id="grade-dias">
+							<div class="titulo-calendario">Dom</div>
+							<div class="titulo-calendario">Seg</div>
+							<div class="titulo-calendario">Ter</div>
+							<div class="titulo-calendario">Qua</div>
+							<div class="titulo-calendario">Qui</div>
+							<div class="titulo-calendario">Sex</div>
+							<div class="titulo-calendario">Sáb</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -283,6 +299,7 @@
 		</footer>
 		<!-- Project -->
 		<script src="src/js/main.js"></script>
+		<script src="src/js/api.js"></script>
 		<script>
 			feather.replace();
 		</script>

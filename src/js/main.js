@@ -4,7 +4,6 @@ let slideIndex = 1
 let slides = document.getElementsByClassName("sld")
 
 function plusSlides(n) {
-    console.log(n)
     showSlides(slideIndex += n)
 }
 
@@ -24,5 +23,3 @@ function showSlides(n) {
     
     slides[slideIndex-1].style.display = 'flex';  
 }
-
-console.log(slides)
