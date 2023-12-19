@@ -300,35 +300,47 @@ ul li {
 	border-radius: .5rem;
 }
 
-#depoimentos .sessao-conteudo {
-	flex-wrap: wrap !important;
-}
-
-#depoimentos .sessao-conteudo div {
-	color: var(--cor-primaria);
-	padding: 1rem;
+#depoimentos .sessao-conteudo .box-depoimentos {
 	margin-bottom: 1rem;
+	display: flex;
+	flex-wrap: wrap;
 }
 
+#depoimentos .sessao-conteudo .box-depoimentos div {
+	padding: 1rem;
+}
 
-#depoimentos .sessao-conteudo div:hover h3 {
+#depoimentos .sessao-conteudo .box-depoimentos div:hover h3 {
 	padding-left: .8rem;
 }
 
-#depoimentos .sessao-conteudo div h3 {
-	padding-left: .5rem;
+#depoimentos .sessao-conteudo .box-depoimentos div h3 {
+	color: var(--cor-primaria);
 	border-left: .2rem solid var(--cor-primaria);
+	padding-left: .5rem;
 	transition: .2s;
 }
 
-#depoimentos .sessao-conteudo div span {
+#depoimentos .sessao-conteudo .box-depoimentos div span {
+	color: var(--cor-primaria);
 	margin-left: .7rem !important;
 }
 
-#depoimentos .sessao-conteudo div p {
+#depoimentos .sessao-conteudo .box-depoimentos div p {
 	font-style: italic;
-	font-size: .8rem !important;
+	font-size: .6rem !important;
 	margin-top: 1rem !important;
+}
+
+#depoimentos .sessao-conteudo .box-depoimentos-img {
+	text-align: center !important;
+}
+
+#depoimentos .sessao-conteudo .box-depoimentos-img img {
+	width: 80%;
+	aspect-ratio: 1 / 1;
+	border-radius: 60% 80% 60% 80%;
+	object-fit: cover;
 }
 
 #planos .sessao-conteudo div table {
