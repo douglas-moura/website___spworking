@@ -390,13 +390,13 @@ ul li {
 }
 
 #planos .sessao-conteudo div table tbody {
-	border: .1rem solid #eee;
+	border: .1rem solid #ddd;
 }
 
 #planos .sessao-conteudo div table tbody tr td {
 	text-align: center;
 	padding: 2rem .5rem;
-	border-bottom: .1rem solid #eee;
+	border-bottom: .1rem solid #ddd;
 }
 
 #planos .sessao-conteudo div table tbody tr td:not(:first-of-type) {
@@ -417,7 +417,7 @@ ul li {
 	display: flex;
 	flex-wrap: wrap;
 	font-size: .8rem;
-	border: .1rem solid #eee;
+	border: .1rem solid #ddd;
 	padding: 1rem;
 	border-radius: .5rem;
 }
@@ -438,7 +438,7 @@ ul li {
 }
 
 #planos .sessao-conteudo #calendario #grade-dias .dia-valido {
-	background-color: #eee;
+	background-color: #ddd;
 	cursor: pointer;
 }
 
