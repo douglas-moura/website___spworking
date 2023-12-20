@@ -10,6 +10,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 @media only screen and (min-width: 640px) and (max-width: 768px) {
@@ -74,6 +75,7 @@
 	
 body {
     font-family: 'Poppins', sans-serif;
+	color: #333 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -214,8 +216,13 @@ ul li {
 	font-size: .8rem;
 }
 
-#menu-desktop ul li:hover {
-	color: var(--cor-primaria);
+#menu-desktop ul li a {
+	text-decoration: none;
+	color: #333 !important;
+}
+
+#menu-desktop ul li:hover a {
+	color: var(--cor-primaria) !important;
 }
 
 #menu-desktop ul li img {
@@ -331,7 +338,7 @@ ul li {
 }
 
 #servicos .sessao-conteudo .servico-coworking ion-icon {
-  color: #333;
+	color: #333;
 }
 
 #servicos .sessao-conteudo .servico-coworking h4 {
@@ -344,6 +351,31 @@ ul li {
 
 #galeria .sessao-conteudo div {
 	margin-bottom: 1rem;
+}
+
+#galeria .sessao-conteudo #img-popup {
+	display: none;
+	z-index: 950;
+	width: 100% !important;
+	height: 100%;
+	position: fixed;
+	background-color: #000000dd;
+	left: 0;
+	top: 0;
+}
+
+#galeria .sessao-conteudo #img-popup img {
+	width: 60%;
+	margin: auto;
+}
+
+#galeria .sessao-conteudo #img-popup ion-icon {
+	color: white;
+	position: absolute;
+	margin: 2rem;
+	font-size: 2rem;
+	right: 0;
+	cursor: pointer;
 }
 
 #galeria .sessao-conteudo div picture img {
@@ -464,12 +496,12 @@ ul li {
 
 #planos .sessao-conteudo #calendario div #grade-dias div {
 	width: calc(100% / 7 - 1rem) !important;
+	justify-content: center;
 	aspect-ratio: 1 / 1;
 	padding: .5rem;
 	margin: .5rem;
 	border-radius: 50%;
 	display: flex;
-	justify-content: center;
     align-items: center;
 }
 
@@ -497,11 +529,11 @@ ul li {
 }
 
 #planos .sessao-conteudo #calendario div .form-calendario input {
+	margin-bottom: 1rem;
 	padding: .5rem;
 	width: 60%;
 	border: 0;
 	border-bottom: .1rem solid #ddd;
-	margin-bottom: 1rem;
 	outline: none;
 }
 

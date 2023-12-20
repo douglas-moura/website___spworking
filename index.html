@@ -24,10 +24,10 @@
 					<li>
 						<img src="./src/img/logo-spworking.png" alt="">
 					</li>
-					<li>Home</li>
-					<li>Espaço</li>
-					<li>Depoimentos</li>
-					<li>Planos</li>
+					<li><a href="#banner">Home</a></li>
+					<li><a href="#galeria">Espaço</a></li>
+					<li><a href="#depoimentos">Depoimentos</a></li>
+					<li><a href="#planos">Planos</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -83,85 +83,89 @@
 					<h2>Espaço</h2>
 				</div>
 				<div class="sessao-conteudo coluna-25_25_25_25">
-					<div>
+					<div onclick="abrirImagem('3d-rendering-business-meeting-working-room-office-building.jpg')">
 						<picture>
 							<img src="./src/img/3d-rendering-business-meeting-working-room-office-building.jpg" alt="">
 						</picture>
 					</div>
-					<div>
+					<div onclick="abrirImagem('modern-interior-design-office.jpg')">
 						<picture>
 							<img src="./src/img/modern-interior-design-office.jpg" alt="">
 						</picture>
 					</div>
-					<div>
+					<div onclick="abrirImagem('view-empty-conference-room.jpg')">
 						<picture>
 							<img src="./src/img/view-empty-conference-room.jpg" alt="">
 						</picture>
 					</div>
-					<div>
+					<div onclick="abrirImagem('empty-boardroom-glass-wall-meeting-room-with-conference-table-shared-desk-team-workplaces-trading-graphs-monitor-office-interior-commercial-real-estate-concept.jpg')">
 						<picture>
 							<img src="./src/img/empty-boardroom-glass-wall-meeting-room-with-conference-table-shared-desk-team-workplaces-trading-graphs-monitor-office-interior-commercial-real-estate-concept.jpg" alt="">
 						</picture>
 					</div>
-					<div>
+					<div onclick="abrirImagem('3d-rendering-modern-loft-office-lounge-co-working-space.jpg')">
 						<picture>
 							<img src="./src/img/3d-rendering-modern-loft-office-lounge-co-working-space.jpg" alt="">
 						</picture>
 					</div>
-					<div>
+					<div onclick="abrirImagem('modern-office-space-with-desktops-with-modern-computers-created-with-generative-ai-technology.jpg')">
 						<picture>
 							<img src="./src/img/modern-office-space-with-desktops-with-modern-computers-created-with-generative-ai-technology.jpg" alt="">
 						</picture>
 					</div>
-					<div>
+					<div onclick="abrirImagem('conference-room-interior-modern-office-with-white-walls-monitor.jpg')">
 						<picture>
 							<img src="./src/img/conference-room-interior-modern-office-with-white-walls-monitor.jpg" alt="">
 						</picture>
 					</div>
-					<div>
+					<div onclick="abrirImagem('empty-room-with-chairs-desks.jpg')">
 						<picture>
 							<img src="./src/img/empty-room-with-chairs-desks.jpg" alt="">
 						</picture>
 					</div>
-					<div>
+					<div onclick="abrirImagem('conference-room-interior-modern-office-with-white-walls-monitor.jpg')">
 						<picture>
 							<img src="./src/img/conference-room-interior-modern-office-with-white-walls-monitor.jpg" alt="">
 						</picture>
 					</div>
-					<div>
+					<div onclick="abrirImagem('view-empty-conference-room.jpg')">
 						<picture>
 							<img src="./src/img/view-empty-conference-room.jpg" alt="">
 						</picture>
 					</div>
-					<div>
+					<div onclick="abrirImagem('3d-rendering-business-meeting-working-room-office-building.jpg')">
 						<picture>
 							<img src="./src/img/3d-rendering-business-meeting-working-room-office-building.jpg" alt="">
 						</picture>
 					</div>
-					<div>
+					<div onclick="abrirImagem('modern-interior-design-office.jpg')">
 						<picture>
 							<img src="./src/img/modern-interior-design-office.jpg" alt="">
 						</picture>
 					</div>
-					<div>
+					<div onclick="abrirImagem('empty-room-with-chairs-desks.jpg')">
 						<picture>
 							<img src="./src/img/empty-room-with-chairs-desks.jpg" alt="">
 						</picture>
 					</div>
-					<div>
+					<div onclick="abrirImagem('3d-rendering-modern-loft-office-lounge-co-working-space.jpg')">
 						<picture>
 							<img src="./src/img/3d-rendering-modern-loft-office-lounge-co-working-space.jpg" alt="">
 						</picture>
 					</div>
-					<div>
+					<div onclick="abrirImagem('empty-boardroom-glass-wall-meeting-room-with-conference-table-shared-desk-team-workplaces-trading-graphs-monitor-office-interior-commercial-real-estate-concept.jpg')">
 						<picture>
 							<img src="./src/img/empty-boardroom-glass-wall-meeting-room-with-conference-table-shared-desk-team-workplaces-trading-graphs-monitor-office-interior-commercial-real-estate-concept.jpg" alt="">
 						</picture>
 					</div>
-					<div>
+					<div onclick="abrirImagem('modern-office-space-with-desktops-with-modern-computers-created-with-generative-ai-technology.jpg')">
 						<picture>
 							<img src="./src/img/modern-office-space-with-desktops-with-modern-computers-created-with-generative-ai-technology.jpg" alt="">
 						</picture>
+					</div>
+					<div id="img-popup">
+						<ion-icon id="fechar-popup" name="close-circle-outline" onclick="fecharImagem()"></ion-icon>
+						<img id="popup-img" alt="">
 					</div>
 				</div>
 			</section>
@@ -324,7 +328,7 @@
 					<div>
 						<h3>Contato</h3>
 						<ul>
-							<li>11 9 8765-4321</li>
+							<li>+55 11 9 8765-4321</li>
 							<li>contato@spworking.com.br</li>
 						</ul>
 					</div>
@@ -354,6 +358,7 @@
 		<!-- Project -->
 		<script src="src/js/main.js"></script>
 		<script src="src/js/calendario.js"></script>
+		<script src="src/js/galeria.js"></script>
 		<script>
 			feather.replace();
 		</script>
