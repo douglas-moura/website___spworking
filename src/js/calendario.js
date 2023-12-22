@@ -8,6 +8,7 @@ let diaSelecionado = null
 
 $.getJSON('http://localhost/spworking/api/db.json',
     function(data) {
+        let meses = data.meses
         let diasTotais = inicioMes + data.meses[mesAtual].dias
         calendarioInfo.innerText = data.meses[mesAtual].mes + ' de ' + anoAtual
         for(let i = 0; i < inicioMes; i++) {
@@ -28,6 +29,7 @@ $.getJSON('http://localhost/spworking/api/db.json',
 )
 
 function escolheData(value) {
+    sessionStorage.setItem("dia_visita", value);
     diaSelecionado = document.getElementsByClassName("dia")
     for(let i = 0; i < diaSelecionado.length; i++) {
         if(diaSelecionado[i].id == 'dia-' + value) {
@@ -38,4 +40,12 @@ function escolheData(value) {
             diaSelecionado[i].style.color = ''
         }
     }
+}
+
+function enviarSolicitacao() {
+    let nome = document.getElementById('nomevisita').value
+    let data = sessionStorage.getItem("dia_visita")
+    console.log(nome, data, mes)
+
+
 }
