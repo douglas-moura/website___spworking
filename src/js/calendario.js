@@ -43,15 +43,23 @@ function escolheData(value) {
 }
 
 function enviarSolicitacao() {
-    let mes = new Date(document.getElementById('info-mes').innerText)
-    let nome = document.getElementById('nomevisita').value
-    let data = sessionStorage.getItem('dia_visita')
+    let nome_c = document.getElementById('nomevisita').value
+    let data_v = sessionStorage.getItem('dia_visita')
+    let mes = document.getElementById('info-mes').innerText
 
-    $.getJSON('http://localhost/spworking/api/db.json',
-        function(data) {
-            data.reservas.push
-            console.log(data.reservas)
+    let dados = {
+        nome: nome_c,
+        data: data_v + ' de ' + mes
+    }
+
+    $.ajax({
+        method: 'POST',
+        url: 'http://localhost/spworking/api/insert.php',
+        data: {
+            tabela: 'reservas',
+            data: JSON.stringify(dados)
         }
-    )
-    console.log(nome, data, mes)
+    })
+
+    console.log(dados)
 }
