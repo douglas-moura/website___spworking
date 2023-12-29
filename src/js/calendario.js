@@ -43,9 +43,15 @@ function escolheData(value) {
 }
 
 function enviarSolicitacao() {
+    let mes = new Date(document.getElementById('info-mes').innerText)
     let nome = document.getElementById('nomevisita').value
-    let data = sessionStorage.getItem("dia_visita")
+    let data = sessionStorage.getItem('dia_visita')
+
+    $.getJSON('http://localhost/spworking/api/db.json',
+        function(data) {
+            data.reservas.push
+            console.log(data.reservas)
+        }
+    )
     console.log(nome, data, mes)
-
-
 }
