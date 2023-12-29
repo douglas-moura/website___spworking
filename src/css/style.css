@@ -13,8 +13,47 @@
 	scroll-behavior: smooth;
 }
 
-@media only screen and (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+	section .sessao-conteudo {
+		flex-wrap: wrap !important;
+	}
+
+	section .sessao-conteudo>div {
+		width: 100% !important;
+	}
+
+	#servicos {
+		margin-top: 2rem !important;
+	}
 }
+
+@media only screen and (min-width: 640px) {
+	section .coluna-60_40>div:first-of-type {
+		width: 59% !important;
+	}
+
+	section .coluna-60_40>div:last-of-type {
+		width: 39% !important;
+	}
+
+	section .coluna-50_50>div {
+		width: 49% !important;
+	}
+
+	section .coluna-33_33_33>div {
+		width: 32% !important;
+	}
+
+	section .coluna-25_25_25_25>div {
+		width: 24% !important;
+	}
+
+	section .coluna-16_16_16_16_16_16>div {
+		width: 15% !important;
+	}
+}
+
+@media only screen and (min-width: 640px) and (max-width: 768px) {}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 	body {
@@ -83,10 +122,16 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 120%;
 }
 
+header,
+main,
+section,
+footer {
+	width: 100%;
+}
+
 header {
 	z-index: 900;
 	position: fixed;
-	width: 100%;
 	padding: 1rem 0;
 }
 
@@ -104,7 +149,6 @@ main, section {
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 }
 
 section {
@@ -128,30 +172,6 @@ section .sessao-conteudo {
 
 section .coluna-100>div {
 	width: 100% !important;
-}
-
-section .coluna-60_40>div:first-of-type {
-	width: 59% !important;
-}
-
-section .coluna-60_40>div:last-of-type {
-	width: 39% !important;
-}
-
-section .coluna-50_50>div {
-	width: 49% !important;
-}
-
-section .coluna-33_33_33>div {
-	width: 32% !important;
-}
-
-section .coluna-25_25_25_25>div {
-	width: 24% !important;
-}
-
-section .coluna-16_16_16_16_16_16>div {
-	width: 15% !important;
 }
 
 footer {
@@ -267,7 +287,7 @@ ul li {
     flex-direction: column;
 	background-size: cover;
 	position: absolute;
-	padding: 8rem 20%;
+	padding: 8rem 15%;
 	overflow: hidden;
 	display: flex;
 	margin: auto;
@@ -467,7 +487,7 @@ ul li {
 }
 
 #planos .sessao-conteudo #calendario {
-	padding-left: 3rem;
+	padding-left: 1rem;
 }
 
 #planos .sessao-conteudo #calendario h2 {
