@@ -13,7 +13,43 @@
 	scroll-behavior: smooth;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 640px) {
+body,
+main,
+section,
+footer {
+	width: 100%;
+	box-sizing: border-box;
+	border: 0 !important;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 430px) {
+	header {
+		padding: 0;
+	}
+	
+	header nav,
+	section>div {
+		width: 90%;
+	}
+
+	#menu-desktop {
+		display: none !important;
+	}
+
+	#menu-mobile {
+		display: none !important;
+	}
+
+	#banner,
+	#banner .slideshow {
+		height: calc(430px * .8) !important;
+	}
+	
+	#banner .slideshow .sld span {
+		height: 100% !important;
+		width: 100% !important;
+	}
+
 	section .sessao-conteudo {
 		flex-wrap: wrap !important;
 	}
@@ -22,12 +58,29 @@
 		width: 100% !important;
 	}
 
-	#servicos {
-		margin-top: 2rem !important;
+	section .coluna-25_25_25_25>div {
+		width: 49% !important;
+	}
+
+	section .coluna-16_16_16_16_16_16>div {
+		width: 49% !important;
+	}
+
+	#planos .sessao-conteudo .tab-precos {
+		overflow-x: scroll;
+	}
+
+	#planos .sessao-conteudo #calendario {
+		padding-left: 0 !important;
 	}
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 430px) {
+	header {
+		padding: 1rem 0;
+		width: 100%;
+	}
+
 	section .coluna-60_40>div:first-of-type {
 		width: 59% !important;
 	}
@@ -53,7 +106,7 @@
 	}
 }
 
-@media only screen and (min-width: 640px) and (max-width: 768px) {}
+@media only screen and (min-width: 430px) and (max-width: 768px) {}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 	body {
@@ -62,29 +115,16 @@
 	
 	header nav,
 	section>div {
-		margin: 0 auto;
-		width: calc(768px * .9);
+		width: 90%;
 	}
 
 	#banner,
 	#banner .slideshow {
 		height: calc(1024px * .65);
 	}
-
-	#servicos .sessao-conteudo .servico-coworking ion-icon {
-		font-size: 2rem;
-		--ionicon-stroke-width: 1.5rem;
-		margin-bottom: 1rem;
-	}
-	
-	#depoimentos .sessao-conteudo div span {
-		font-size: .5rem !important;
-	}
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {
-	
-}
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {}
 
 @media only screen and (min-width: 1280px) {
 	body {
@@ -93,18 +133,12 @@
 	
 	header nav,
 	section>div {
-		width: calc(1280px * .9);
+		width: 70%;
 	}
 
 	#banner,
 	#banner .slideshow {
 		height: calc(1280px * .65);
-	}
-
-	#servicos .sessao-conteudo .servico-coworking ion-icon {
-		font-size: 3rem;
-		--ionicon-stroke-width: 1.5rem;
-		margin-bottom: 1rem;
 	}
 	
 	#depoimentos .sessao-conteudo div span {
@@ -115,6 +149,7 @@
 body {
     font-family: 'Poppins', sans-serif;
 	color: #333 !important;
+	border: solid green;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -122,17 +157,9 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 120%;
 }
 
-header,
-main,
-section,
-footer {
-	width: 100%;
-}
-
 header {
 	z-index: 900;
 	position: fixed;
-	padding: 1rem 0;
 }
 
 header nav,
@@ -143,16 +170,18 @@ section>div {
 main {
 	z-index: 800;
 	font-size: .8rem;
+	border: solid red;
 }
 
 main, section {
-	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 }
 
 section {
 	padding: 3rem 0;
+	overflow: hidden;
+	border: solid blue;
 }
 
 div {
@@ -236,18 +265,27 @@ ul li {
 	font-size: .8rem;
 }
 
-#menu-desktop ul li a {
+#menu-desktop ul li a,
+#menu-mobile ul li a {
 	text-decoration: none;
 	color: #333 !important;
 }
 
-#menu-desktop ul li:hover a {
+#menu-desktop ul li:hover a,
+#menu-mobile ul li:hover a {
 	color: var(--cor-primaria) !important;
 }
 
-#menu-desktop ul li img {
+#menu-desktop ul li img,
+#menu-mobile ul li img {
 	height: 1.2rem;
 	margin: .5rem 10rem .5rem 0;
+}
+
+#menu-mobile {
+	background-color: red;
+	padding: 1rem;
+	height: 100% !important;
 }
 
 #banner {
@@ -259,6 +297,7 @@ ul li {
 	width: 100%;
 	display: flex;
 	align-items: center;
+	box-sizing: border-box;
 	/*overflow: hidden;*/
 }
 
@@ -374,12 +413,12 @@ ul li {
 }
 
 #galeria .sessao-conteudo #img-popup {
+	background-color: #000000dd;
+	width: 100% !important;
+	position: fixed;
 	display: none;
 	z-index: 950;
-	width: 100% !important;
 	height: 100%;
-	position: fixed;
-	background-color: #000000dd;
 	left: 0;
 	top: 0;
 }
@@ -404,6 +443,10 @@ ul li {
 	height: 100%;
 	object-fit: cover;
 	border-radius: .5rem;
+}
+
+#depoimentos .sessao-conteudo div span {
+	font-size: .5rem !important;
 }
 
 #depoimentos .sessao-conteudo .box-depoimentos {
@@ -453,36 +496,36 @@ ul li {
 	margin-bottom: 5rem;
 }
 
-#planos .sessao-conteudo div table {
+#planos .sessao-conteudo .tab-precos table {
 	width: 100%;
 	border-collapse: collapse;
 	font-size: .8rem;
 }
 
-#planos .sessao-conteudo div table thead tr {
+#planos .sessao-conteudo .tab-precos table thead tr {
 	background-color: var(--cor-primaria);
 }
 
-#planos .sessao-conteudo div table thead tr th {
+#planos .sessao-conteudo .tab-precos table thead tr th {
 	width: calc(100% / 6);
 	color: white;
 	padding: 1.5rem .5rem;
 }
 
-#planos .sessao-conteudo div table tbody {
+#planos .sessao-conteudo .tab-precos table tbody {
 	border: .1rem solid #ddd;
 }
 
-#planos .sessao-conteudo div table tbody tr:nth-child(even) {
+#planos .sessao-conteudo .tab-precos table tbody tr:nth-child(even) {
 	background-color: #f8f8f8;
 }
 
-#planos .sessao-conteudo div table tbody tr td {
+#planos .sessao-conteudo .tab-precos table tbody tr td {
 	text-align: center;
 	padding: 2rem .5rem;
 }
 
-#planos .sessao-conteudo div table tbody tr td:not(:first-of-type) {
+#planos .sessao-conteudo .tab-precos table tbody tr td:not(:first-of-type) {
 	color: #999;
 }
 
