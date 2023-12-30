@@ -31,6 +31,31 @@ footer {
 	section>div {
 		width: 90%;
 	}
+	
+	section {
+    	padding: 1.5rem 0 !important;
+	}
+
+	section .sessao-conteudo {
+		flex-wrap: wrap !important;
+	}
+
+	section .sessao-conteudo>div {
+		width: 100% !important;
+	}
+
+	section .coluna-25_25_25_25>div {
+		width: 48% !important;
+	}
+
+	section .coluna-16_16_16_16_16_16>div {
+		width: 48% !important;
+	}
+
+	footer section .coluna-25_25_25_25>div {
+		width: 100% !important;
+		margin-bottom: 2.5rem;
+	}
 
 	#menu-desktop {
 		display: none !important;
@@ -50,28 +75,50 @@ footer {
 		width: 100% !important;
 	}
 
-	section .sessao-conteudo {
-		flex-wrap: wrap !important;
+	#servicos {
+		margin-top: -3rem !important;
 	}
 
-	section .sessao-conteudo>div {
-		width: 100% !important;
+	#servicos .sessao-conteudo .servico-coworking {
+		margin-bottom: 1rem !important;
 	}
 
-	section .coluna-25_25_25_25>div {
-		width: 49% !important;
+	#servicos .sessao-conteudo .servico-coworking ion-icon {
+		font-size: 2rem;
+    	margin-bottom: 1rem;
 	}
 
-	section .coluna-16_16_16_16_16_16>div {
-		width: 49% !important;
+	#galeria .sessao-conteudo #img-popup {
+		overflow-x: scroll;
+	}
+
+	#galeria .sessao-conteudo #img-popup ion-icon {
+    	position: fixed !important;
+	}
+
+	#galeria .sessao-conteudo #img-popup img {
+    	width: 160% !important;
 	}
 
 	#planos .sessao-conteudo .tab-precos {
 		overflow-x: scroll;
 	}
+	
+	#planos .sessao-conteudo .tab-precos table thead tr th {
+		padding: 1.5rem 2rem !important;
+	}
+
+	#planos .sessao-conteudo .tab-precos table tbody tr td {
+		padding: 2rem !important;
+	}
 
 	#planos .sessao-conteudo #calendario {
 		padding-left: 0 !important;
+		padding-top: 3rem !important;
+	}
+
+	#planos .sessao-conteudo #calendario div .form-calendario .btn {
+		width: 50% !important;
 	}
 }
 
