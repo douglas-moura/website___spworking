@@ -60,6 +60,4 @@ function enviarSolicitacao() {
             data: JSON.stringify(dados)
         }
     })
-
-    console.log(dados)
 }

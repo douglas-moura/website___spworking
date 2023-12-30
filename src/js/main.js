@@ -1,6 +1,5 @@
 // slide banner
 let slideIndex = 1
-
 let slides = document.getElementsByClassName("sld")
 
 function plusSlides(n) {
@@ -22,4 +21,18 @@ function showSlides(n) {
     }
     
     slides[slideIndex-1].style.display = 'flex';  
+}
+
+// menu mobile
+function abrirMenu() {
+    let menu = document.getElementById('menu-mobile')
+    let icone = document.getElementById('topbar-icone')
+
+    if(menu.style.marginLeft !== '0px') {
+        menu.style.marginLeft = '0px'
+        icone.setAttribute('name', 'close')
+    } else {
+        menu.style.marginLeft = '-100%'
+        icone.setAttribute('name', 'menu')
+    }
 }

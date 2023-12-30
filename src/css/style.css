@@ -25,6 +25,8 @@ footer {
 @media only screen and (min-width: 320px) and (max-width: 430px) {
 	header {
 		padding: 0;
+		height: 100%;
+		width: 100%;
 	}
 	
 	header nav,
@@ -33,7 +35,11 @@ footer {
 	}
 	
 	section {
-    	padding: 1.5rem 0 !important;
+    	padding: 1rem 0 !important;
+	}
+
+	section .sessao-titulo {
+		padding-top: 2rem;
 	}
 
 	section .sessao-conteudo {
@@ -61,10 +67,6 @@ footer {
 		display: none !important;
 	}
 
-	#menu-mobile {
-		display: none !important;
-	}
-
 	#banner,
 	#banner .slideshow {
 		height: calc(430px * 1) !important;
@@ -80,8 +82,8 @@ footer {
 	}
 	
 	#banner .slideshow>span {
-		margin: auto 0.5rem !important;
-		padding: 0.3rem !important;
+		margin: auto .5rem !important;
+		padding: .5rem !important;
 	}
 
 	#banner .slideshow span ion-icon {
@@ -94,11 +96,6 @@ footer {
 
 	#servicos .sessao-conteudo .servico-coworking {
 		margin-bottom: 1rem !important;
-	}
-
-	#servicos .sessao-conteudo .servico-coworking ion-icon {
-		font-size: 2rem;
-    	margin-bottom: 1rem;
 	}
 
 	#galeria .sessao-conteudo #img-popup {
@@ -164,6 +161,16 @@ footer {
 	section .coluna-16_16_16_16_16_16>div {
 		width: 15% !important;
 	}
+ 
+	header .topbar,
+	#menu-mobile {
+		display: none !important;
+	}
+
+
+	#banner .slideshow .sld h1 {
+		padding-right: 30% !important;
+	}
 }
 
 @media only screen and (min-width: 430px) and (max-width: 768px) {}
@@ -182,11 +189,45 @@ footer {
 	#banner .slideshow {
 		height: calc(1024px * .65);
 	}
+
+	#banner .slideshow .sld h1 {
+    	font-size: 3rem !important;
+	}
+
+	#banner .slideshow .sld h1 strong {
+    	font-size: 1rem !important;
+	}
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {}
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+	body {
+		font-size: 12px;
+	}
+	
+	header nav,
+	section>div {
+		width: 80%;
+	}
 
-@media only screen and (min-width: 1280px) {
+	#banner,
+	#banner .slideshow {
+		height: calc(1024px * .65);
+	}
+
+	#banner .slideshow .sld h1 {
+    	font-size: 4rem !important;
+	}
+
+	#banner .slideshow .sld h1 strong {
+    	font-size: 2rem !important;
+	}
+
+	#depoimentos .sessao-conteudo .box-depoimentos-img img {
+		width: 100% !important;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
 	body {
 		font-size: 14px;
 	}
@@ -198,7 +239,15 @@ footer {
 
 	#banner,
 	#banner .slideshow {
-		height: calc(1280px * .65);
+		height: calc(1440px * .65);
+	}
+
+	#banner .slideshow .sld h1 {
+    	font-size: 5rem !important;
+	}
+
+	#banner .slideshow .sld h1 strong {
+    	font-size: 2rem !important;
 	}
 	
 	#depoimentos .sessao-conteudo div span {
@@ -225,6 +274,22 @@ header {
 header nav,
 section>div {
 	margin: 0 auto;
+}
+
+header .topbar {
+	padding: .5rem 1rem;
+	background-color: white;
+	z-index: 810;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+header .topbar ion-icon {
+	font-size: 1.5rem;
+	color: #333;
+	display: flex;
 }
 
 main {
@@ -343,9 +408,22 @@ ul li {
 }
 
 #menu-mobile {
-	background-color: red;
-	padding: 1rem;
+	background-color: white;
+	padding: 3rem 1rem;
 	height: 100% !important;
+	display: flex;
+	margin-left: -100%;
+	transition: .2s;
+}
+
+#menu-mobile ion-icon {
+	color: var(--cor-primaria-0);
+	font-size: 2rem;
+	right: 0;
+}
+
+#menu-mobile ul li {
+	margin-bottom: 1rem;
 }
 
 #banner {
@@ -409,18 +487,12 @@ ul li {
 }
 
 #banner .slideshow .sld h1 {
-	padding-right: 30%;
-}
-
-#banner .slideshow .sld h1 {
-	font-size: 5rem;
 	text-transform: uppercase;
 	color: white !important;
 	z-index: 792;
 }
 
 #banner .slideshow .sld h1 strong {
-	font-size: 2rem;
 	margin: 0 !important;
 }
 
@@ -457,6 +529,8 @@ ul li {
 }
 
 #servicos .sessao-conteudo .servico-coworking ion-icon {
+	font-size: 2rem;
+	margin-bottom: 1rem;
 	color: #333;
 }
 
