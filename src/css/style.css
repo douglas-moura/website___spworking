@@ -67,12 +67,25 @@ footer {
 
 	#banner,
 	#banner .slideshow {
-		height: calc(430px * .8) !important;
+		height: calc(430px * 1) !important;
+	}
+
+	#banner .slideshow .sld h1 {
+    	font-size: 2rem !important;
+		padding: 0 !important;
+	}
+
+	#banner .slideshow .sld h1 strong {
+    	font-size: .8rem !important;
 	}
 	
-	#banner .slideshow .sld span {
-		height: 100% !important;
-		width: 100% !important;
+	#banner .slideshow>span {
+		margin: auto 0.5rem !important;
+		padding: 0.3rem !important;
+	}
+
+	#banner .slideshow span ion-icon {
+    	font-size: 1rem !important;
 	}
 
 	#servicos {
@@ -336,7 +349,7 @@ ul li {
 }
 
 #banner {
-	padding: 0;
+	padding: 0 !important;
 }
 
 #banner .slideshow {
