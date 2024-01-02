@@ -132,12 +132,18 @@ footer {
 	#planos .sessao-conteudo #calendario div .form-calendario .btn {
 		width: 50% !important;
 	}
+
+	#planos .sessao-conteudo #calendario div #grade-dias div {
+		width: calc(100% / 7 - 0.5rem) !important;
+		margin: 0.25rem !important;
+	}
 }
 
 @media only screen and (min-width: 430px) {
 	header {
 		padding: 1rem 0;
 		width: 100%;
+		position: fixed;
 	}
 
 	section .coluna-60_40>div:first-of-type {
@@ -719,7 +725,7 @@ ul li {
 }
 
 #planos .sessao-conteudo #calendario div #grade-dias div {
-	width: calc(100% / 7 - 1rem) !important;
+	width: calc(100% / 7 - 1rem);
 	justify-content: center;
 	aspect-ratio: 1 / 1;
 	padding: .5rem;
