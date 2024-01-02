@@ -9,12 +9,12 @@ let diaSelecionado = null
 $.getJSON('http://localhost/spworking/api/db.json',
     function(data) {
         let meses = data.meses
-        let diasTotais = inicioMes + data.meses[mesAtual].dias
-        calendarioInfo.innerText = data.meses[mesAtual].mes + ' de ' + anoAtual
+        let diasTotais = inicioMes + meses[mesAtual].dias
+        calendarioInfo.innerText = meses[mesAtual].mes + ' de ' + anoAtual
         for(let i = 0; i < inicioMes; i++) {
             calendarioBox.innerHTML += '<div class="dia dia-vazio"></div>'
         }
-        for(let i = 1; i <= data.meses[mesAtual].dias; i++) {
+        for(let i = 1; i <= meses[mesAtual].dias; i++) {
             if(i < diaAtual) {
                 calendarioBox.innerHTML += '<div class="dia dia-block" id="dia-' + i + '">' + i + '</div>'    
             } else {
@@ -25,6 +25,7 @@ $.getJSON('http://localhost/spworking/api/db.json',
                 }
             }
         }
+        console.log(meses[mesAtual].feriados.length)
     }
 )
 

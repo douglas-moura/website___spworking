@@ -180,7 +180,28 @@ footer {
 	}
 }
 
-@media only screen and (min-width: 430px) and (max-width: 768px) {}
+@media only screen and (min-width: 430px) and (max-width: 768px) {
+	body {
+		font-size: 14px !important;
+	}
+	
+	#planos .sessao-conteudo {
+		flex-direction: column !important;
+	}
+
+	#planos .sessao-conteudo>div {
+		width: 100% !important;
+	}
+
+	#planos .sessao-conteudo #calendario {
+		padding: 0 !important;
+		padding-top: 3rem !important;
+	}
+
+	#planos .sessao-conteudo #calendario>div {
+		padding: 2rem !important;
+	}
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 	body {
@@ -217,7 +238,7 @@ footer {
 	
 	header nav,
 	section>div {
-		width: 80%;
+		width: 90%;
 	}
 
 	#banner,
@@ -239,6 +260,11 @@ footer {
 
 	#planos .sessao-conteudo #calendario div .form-calendario .btn {
 		width: 40% !important;
+	}
+
+	#planos .sessao-conteudo #calendario div #grade-dias div {
+		width: calc(100% / 7 - 0.5rem) !important;
+		margin: 0.25rem !important;
 	}
 }
 
@@ -277,11 +303,26 @@ footer {
 	
 	header nav,
 	section>div {
-		width: 50%;
+		width: 60%;
+	}
+
+	#banner .slideshow .sld {
+		padding: 8rem 20% !important;
+	}
+}
+
+@media only screen and (min-width: 2200px) {
+	body {
+		font-size: 10px;
 	}
 
 	#banner .slideshow .sld {
 		padding: 8rem 25% !important;
+	}
+	
+	header nav,
+	section>div {
+		width: 50%;
 	}
 }
 	
