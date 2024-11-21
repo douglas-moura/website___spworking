@@ -1,4 +1,4 @@
-# SPWorking - Website Institucional de Coworking
+# Site Institucional Coworking SPWorking
 
 Este é o site institucional do SPWorking, um espaço de coworking localizado na região do Butantã, em São Paulo. O objetivo deste site é fornecer informações sobre os serviços e benefícios oferecidos pelo coworking, como planos de assinatura, contato e localização.
 
@@ -11,9 +11,9 @@ Este é o site institucional do SPWorking, um espaço de coworking localizado na
 
 ### Funcionalidades
 
-- Informações sobre planos de coworking.
 - Localização e detalhes sobre o espaço.
-- Página de contato com formulário.
+- Informações sobre serviços e planos do coworking.
+- Formulário de agendamento.
 - Design responsivo para dispositivos móveis.
 
 ### Como Rodar o Projeto
