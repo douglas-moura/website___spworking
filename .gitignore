@@ -5,4 +5,4 @@
 *.log
 
 # Dependências de pacotes
-node_modules/
+# node_modules/
