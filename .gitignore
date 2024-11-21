@@ -1,0 +1,8 @@
+# Ignorar arquivos de sistema
+.DS_Store
+
+# Logs
+*.log
+
+# Dependências de pacotes
+node_modules/
