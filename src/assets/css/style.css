@@ -21,7 +21,7 @@
         @apply w-full flex flex-col
     }
 
-    h1, h2, h3 {
+    h1, h2, h3, h4 {
         @apply font-extrabold mb-4 text-neutral-600
     }
 
@@ -42,7 +42,7 @@
     }
 
     h5 {
-        @apply text-xs
+        @apply text-xs text-neutral-600
     }
 
     span {
@@ -50,13 +50,41 @@
     }
 
     p {
-        @apply text-neutral-400
+        @apply text-neutral-400 text-base mb-4
+    }
+
+    a {
+        @apply cursor-pointer
     }
 }
 
 @layer components {
     .container {
-        @apply grid mx-auto w-5/6 lg:w-10/12
+        @apply grid gap-8 mx-auto w-5/6 lg:w-10/12 xl:w-8/12
+    }
+
+    .btn {
+        @apply rounded bg-neutral-300 text-white py-3 px-4 text-sm transition-all
+    }
+
+    .btn-verde {
+        @apply bg-verde-500 hover:bg-verde-700
+    }
+
+    .btn-roxo {
+        @apply bg-roxo-500 hover:bg-roxo-800
+    }
+
+    .bloco-servico {
+        @apply rounded shadow-lg overflow-hidden
+    }
+
+    .bloco-servico span {
+        @apply p-4 bg-white relative h-full
+    }
+
+    .bloco-servico h4 {
+        @apply bg-roxo-500 text-white absolute -top-6 left-4 h-12 w-4/6 flex flex-col justify-center p-4
     }
 }
 

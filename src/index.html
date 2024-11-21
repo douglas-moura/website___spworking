@@ -6,33 +6,114 @@
         <title>SPWorking</title>
     </head>
     <body>
-        <header class="py-4 fixed w-full">
-            <section>
+        <header class="z-40 py-4 fixed top-0 w-full bg-[#000000bb]">
+            <section class="py-6">
                 <nav class="container grid-cols-2">
-                    <span>Logo</span>
-                    <ul class="inline-flex justify-end">
-                        <li class="ml-4">Home</li>
-                        <li class="ml-4">Galeria</li>
-                        <li class="ml-4">Serviços</li>
-                        <li class="ml-4">Localização</li>
-                        <li class="ml-4">Contato</li>
+                    <h2 class="text-neutral-200 my-auto">
+                        <img src="./assets/img/logo-spworking.png" alt="Logotipo SPWorking" class="h-6">
+                    </h2>
+                    <ul class="inline-flex items-center h-full justify-between text-verde-300">
+                        <li class=""><a href="">Home</a></li>
+                        <li class=""><a href="">Galeria</a></li>
+                        <li class=""><a href="">Serviços</a></li>
+                        <li class=""><a href="">Localização</a></li>
+                        <li class=""><a href="">Contato</a></li>
                     </ul>
                 </nav>
             </section>
         </header>
         <main>
-            <section id="banner" class="min-h-dvh items-center">
-                <div class="container m-auto">
-                    Banner
+            <section id="banner" class="min-h-96 items-center pt-40 pb-20 mt-0 bg-escritorio-banner bg-center bg-cover">
+                <div class="container grid-cols-5">
+                    <div class="col-span-2 aspect-square bg-neutral-100 p-12 rounded mt-8">
+                        <h1 class="text-neutral-800">Título</h1>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, iste accusantium. Neque assumenda nihil animi optio vitae excepturi reprehenderit at in beatae eius, ut aliquid perferendis autem? Ipsam, nisi saepe.</p>
+                        <button class="btn btn-roxo">Entre em contato</button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container grid-cols-5 py-24">
+                    <div class="col-span-3 flex items-center relative">
+                        <div class="z-20 absolute h-[90%] w-[2px] ml-12 bg-verde-500"></div>
+                        <ul class="z-30 grid gap-12 w-5/6">
+                            <li class="flex items-center">
+                                <span class="flex mr-4 bg-verde-500 rounded-full">
+                                    <iconify-icon icon="tabler:device-imac" height="3rem" class="m-6 text-white"></iconify-icon>
+                                </span>
+                                <p class="m-0 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum et architecto provident ut sint numquam iusto sunt ipsam nostrum dolorum.</p>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="flex mr-4 bg-verde-500 rounded-full">
+                                    <iconify-icon icon="tabler:coffee" height="3rem" class="m-6 text-white"></iconify-icon>
+                                </span>
+                                <p class="m-0 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum et architecto provident ut sint numquam iusto sunt ipsam nostrum dolorum.</p>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="flex mr-4 bg-verde-500 rounded-full">
+                                    <iconify-icon icon="tabler:message" height="3rem" class="m-6 text-white"></iconify-icon>
+                                </span>
+                                <p class="m-0 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum et architecto provident ut sint numquam iusto sunt ipsam nostrum dolorum.</p>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="flex mr-4 bg-verde-500 rounded-full">
+                                    <iconify-icon icon="tabler:heart-handshake" height="3rem" class="m-6 text-white"></iconify-icon>
+                                </span>
+                                <p class="m-0 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum et architecto provident ut sint numquam iusto sunt ipsam nostrum dolorum.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-span-2 flex flex-col justify-center">
+                        <h1>Somos um Coworking</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit nulla necessitatibus labore recusandae, ex mollitia aut quidem eligendi molestiae quibusdam esse nisi quo saepe possimus dolores nesciunt cupiditate fugit quisquam?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit nulla necessitatibus labore recusandae, ex mollitia aut quidem eligendi molestiae quibusdam esse nisi quo saepe possimus dolores nesciunt cupiditate fugit quisquam?</p>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-verde-700 py-24">
+                <div class="container grid-cols-3">
+                    <div class="bloco-servico">
+                        <picture class="flex aspect-square bg-neutral-200">
+                            <img src="./assets/img/escritorio-05.jpg" alt="Espaços Compartilhados SPWorking" class="w-full h-full object-cover object-left">
+                        </picture>
+                        <span>
+                            <h4>Salas Compartilhadas</h4>
+                            <h5 class="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolorum totam magni aliquid.</h5>
+                        </span>
+                    </div>
+                    <div class="bloco-servico">
+                        <picture class="flex aspect-square bg-neutral-200">
+                            <img src="./assets/img/sala-privativa-01.jpg" alt="Sala Privativa SPWorking" class="w-full h-full object-cover object-center">
+                        </picture>
+                        <span>
+                            <h4>Sala Privativa</h4>
+                            <h5 class="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolorum totam magni aliquid.</h5>
+                        </span>
+                    </div>
+                    <div class="bloco-servico">
+                        <picture class="flex aspect-square bg-neutral-200">
+                            <img src="./assets/img/sala-de-reuniao-01.jpg" alt="Sala de Reunião SPWorking" class="w-full h-full object-cover object-right">
+                        </picture>
+                        <span>
+                            <h4>Sala de Reunião</h4>
+                            <h5 class="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolorum totam magni aliquid.</h5>
+                        </span>
+                    </div>
                 </div>
             </section>
         </main>
-        <footer class="py-4 bg-neutral-800 text-neutral-200">
-            <section>
+        <footer class="text-neutral-200">
+            <section class="py-8 bg-neutral-800">
                 <div class="container">
-                    <h4>Rodapé</h4>
+
+                </div>
+            </section>
+            <section class="py-8 bg-neutral-900">
+                <div class="container text-center">
+                    <h5 class="text-neutral-200">SPWorking Butantã - 2024 | Todos os direitos reservados</h5>
                 </div>
             </section>
         </footer>
+        <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
     </body>
 </html>
