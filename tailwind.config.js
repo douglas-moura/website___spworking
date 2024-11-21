@@ -4,7 +4,11 @@ module.exports = {
         "./src/**/*.{html,js,ts,tsx}"
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                'nunito': ['Nunito', 'Helvetica', 'sans-serif']
+            }
+        },
     },
     plugins: [],
 }
