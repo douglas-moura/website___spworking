@@ -19,6 +19,25 @@ Este é o site institucional do SPWorking, um espaço de coworking localizado na
 ## Como Rodar o Projeto
 
 1. Clone o repositório:
+   
    ```bash
    git clone https://github.com/douglas-moura/website__spworking.git
    ```
+
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+3. Inicie o projeto:
+
+   ```bash
+   npm start
+   ```
+
+4. Acesse o site localmente: Abra o navegador e acesse http://localhost:3000.
+
+## Licença
+
+Este projeto está licenciado sob a MIT License.
