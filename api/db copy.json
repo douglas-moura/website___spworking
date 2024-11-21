@@ -1,0 +1,83 @@
+{
+    "meses": {
+        "0": {
+            "mes": "janeiro",
+            "dias": 31,
+            "feriados": [
+                1, 25
+            ]
+        },
+        "1": {
+            "mes": "fevereiro",
+            "dias": 28,
+            "feriados": [
+                22, 23, 24, 25
+            ]
+        },
+        "2": {
+            "mes": "março",
+            "dias": 31
+        },
+        "3": {
+            "mes": "abril",
+            "dias": 30,
+            "feriados": [
+                15, 21
+            ]
+        },
+        "4": {
+            "mes": "maio",
+            "dias": 31,
+            "feriados": [
+                1
+            ]
+        },
+        "5": {
+            "mes": "junho",
+            "dias": 30
+        },
+        "6": {
+            "mes": "julho",
+            "dias": 30
+        },
+        "7": {
+            "mes": "agosto",
+            "dias": 31
+        },
+        "8": {
+            "mes": "setembro",
+            "dias": 30,
+            "feriados": [
+                7
+            ]
+        },
+        "9": {
+            "mes": "outubro",
+            "dias": 31,
+            "feriados": [
+                12
+            ]
+        },
+        "10": {
+            "mes": "novembro",
+            "dias": 30,
+            "feriados": [
+                2, 15, 20
+            ]
+        },
+        "11": {
+            "mes": "dezembro",
+            "dias": 31,
+            "feriados": [
+                25
+            ]
+        }
+    },
+    "reservas": {
+        "0": {
+            "nome": "Rodrigo Silva",
+            "tipo": "mesa",
+            "data": "02-02-2024"
+        }
+    }
+}
