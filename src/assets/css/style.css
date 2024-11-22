@@ -18,7 +18,7 @@
     }
 
     section {
-        @apply w-full flex flex-col
+        @apply w-full flex flex-col py-24
     }
 
     h1, h2, h3, h4 {
@@ -26,7 +26,7 @@
     }
 
     h1 {
-        @apply text-4xl
+        @apply text-4xl mb-8
     }
 
     h2 {
@@ -47,6 +47,14 @@
 
     span {
         @apply flex
+    }
+
+    picture {
+        @apply flex overflow-hidden
+    }
+
+    picture img {
+        @apply object-cover
     }
 
     p {
@@ -86,10 +94,42 @@
     .bloco-servico h4 {
         @apply bg-roxo-500 text-white absolute -top-6 left-4 h-12 w-4/6 flex flex-col justify-center p-4
     }
+
+    .img-galeria {
+        @apply shadow-lg min-h-52 cursor-pointer
+    }
+
+    .card {
+        @apply flex-1 h-full transition-all duration-75 cursor-pointer bg-cover bg-center relative opacity-80 hover:opacity-100 border border-neutral-100
+    }
+
+    .pelicula {
+        @apply z-10 p-8 absolute w-full h-full top-0 left-0 bg-[#00000000] transition-all duration-150 group-hover:bg-gradient-to-b from-[#000000e1] from-40% to-[#0000001a]
+    }
+
+    .text-card {
+        @apply break-words w-full flex-col opacity-0 transition-all duration-150 delay-200
+    }
+
+    .tab-precos td {
+        @apply text-sm text-neutral-600 py-8 px-6
+    }
+
+    .tab-linha {
+        @apply odd:bg-white even:bg-neutral-50
+    }
+
+    .cel-valores {
+        @apply text-left
+    }
 }
 
 @layer utilities {
     * {
         border: 0px solid red;
+    }
+
+    .card:hover {
+        flex: 3;
     }
 }

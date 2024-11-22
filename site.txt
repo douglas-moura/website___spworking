@@ -1,0 +1,20 @@
+Menu
+Banner
+Vantagens e Sombre nós
+Serviços
+Beneficios
+Galeria
+    - Fazer img abrir em tela cheia
+Comentarios clientes
+Localização privilegiada
+Planos e Preços
+FAQ e Form
+    - Agende uma visita
+Rodapé
+    - Logo
+    - Telefones e Email
+    - Redes Sociais
+    - Horario de funcionamente e endereço
+Rodapé Final
+    - CNPJ
+    - Desenv por

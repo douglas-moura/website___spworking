@@ -18,6 +18,10 @@ module.exports = {
             },
             backgroundImage: {
                 'escritorio-banner': "url('../img/escritorio-02.jpg')",
+                'shop-butanta': "url('../img/butanta-shopping.webp')",
+                'merc-pao-acucar': "url('../img/pao-de-acucar.jpg')",
+                'merc-sams-club': "url('../img/sams-club.jpg')",
+                'corr-onibus': "url('../img/ponto-onibus.jpg')",
             }
         },
     },
