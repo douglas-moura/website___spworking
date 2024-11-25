@@ -64,6 +64,10 @@
     a {
         @apply cursor-pointer
     }
+
+    input {
+        @apply px-4 py-3 outline-none rounded text-sm
+    }
 }
 
 @layer components {
@@ -119,8 +123,8 @@
         @apply odd:bg-white even:bg-neutral-50
     }
 
-    .cel-valores {
-        @apply text-left
+    .cel-valores span {
+        @apply justify-between flex-row
     }
 }
 
