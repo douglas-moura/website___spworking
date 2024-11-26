@@ -18,9 +18,8 @@ module.exports = {
                 test: /\.css$/,                                         // Processa arquivos css
                 //use: [MiniCssExtractPlugin.loader, 'css-loader'],     // Processa css sem o tailwind
                 use: [
-                    'style-loader',
+                    MiniCssExtractPlugin.loader,
                     'css-loader',
-                    //'postcss-loader'                                    // Processa css com o tailwind
                     {
                         loader: 'postcss-loader',
                         options: {
@@ -36,7 +35,10 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg)$/,                      // Processa imagens
-                type: 'asset/resource'
+                type: 'asset/resource',
+                generator: {
+                    filename: 'img/[hash][ext][query]',        // Define o nome do arquivo final
+                }
             },
             {
                 test: /\html$/,                                         // Processa html
