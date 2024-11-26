@@ -3,11 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-    entry: './src/index.js',                                            // arquivo de entrada
+    entry: './src/index.ts',                                            // arquivo de entrada
     output: {
         filename: 'bundle.js',                                          // arquivo de saida
         path: path.resolve(__dirname, 'dist'),                          // pasta de saida
         clean: true                                                     // limpar a pasta de saida a cada build
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js'],                             // Resolve essas extensões automaticamente
     },
     module: {
         rules: [
@@ -38,7 +41,12 @@ module.exports = {
             {
                 test: /\html$/,                                         // Processa html
                 use: ['html-loader']
-            }
+            },
+            {
+                test: /\.tsx?$/,                                        // Processa arquivos .ts e .tsx
+                use: 'ts-loader',                                       // Transpila TypeScript para JavaScript
+                exclude: /node_modules/,
+            },
         ]
     },
     plugins: [

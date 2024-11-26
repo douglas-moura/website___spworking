@@ -4,13 +4,476 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SPWorking</title>
-    <script defer src="bundle.js"></script><link href="style.css" rel="stylesheet"></head>
+    <script defer src="bundle.js"></script></head>
     <body>
-        <header>
-            <h1>Bem-vindo</h1>
+        <header class="z-40 py-4 fixed top-0 w-full bg-[#000000bb]">
+            <section class="py-6">
+                <nav class="container grid-cols-2">
+                    <h2 class="text-neutral-200 my-auto">
+                        <img src="5b43d2e7a72e4336b5bb.png" alt="Logotipo SPWorking" class="h-6">
+                    </h2>
+                    <ul class="inline-flex items-center h-full justify-between text-white">
+                        <li class=""><a href="">Home</a></li>
+                        <li class=""><a href="">Galeria</a></li>
+                        <li class=""><a href="">Serviços</a></li>
+                        <li class=""><a href="">Localização</a></li>
+                        <li class=""><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+            </section>
         </header>
         <main>
-            <p>Site Institucional</p>
+            <section id="banner" class="min-h-96 items-center pt-40 pb-20 mt-0 bg-escritorio-banner bg-center bg-cover">
+                <div class="container grid-cols-2">
+                    <div class="aspect-square bg-neutral-100 p-12 rounded mt-8">
+                        <div class="flex flex-col justify-between h-full">
+                            <div>
+                                <h1 class="text-neutral-800">Networking, Produtividade e Conforto</h1>
+                                <p class="m-0">Ambiente acolhedor com tudo que você precisa para prosperar. Aproveite eventos exclusivos e amplie suas conexões.</p>
+                            </div>
+                            <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank" class="btn btn-whats w-1/2 flex items-center justify-center">
+                                <iconify-icon icon="tabler:brand-whatsapp" height="1.2rem" class="text-white mr-2"></iconify-icon>
+                                Entre em contato
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sobre">
+                <div class="container grid-cols-5">
+                    <div class="col-span-3 flex items-center relative">
+                        <div class="z-20 absolute h-[90%] w-[2px] ml-12 bg-verde-500"></div>
+                        <ul class="z-30 grid gap-12 w-5/6">
+                            <li class="flex items-center">
+                                <span class="flex mr-4 bg-verde-500 rounded-full">
+                                    <iconify-icon icon="tabler:device-imac" height="3rem" class="m-6 text-white"></iconify-icon>
+                                </span>
+                                <p class="m-0 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum et architecto provident ut sint numquam iusto sunt ipsam nostrum dolorum.</p>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="flex mr-4 bg-verde-500 rounded-full">
+                                    <iconify-icon icon="tabler:coffee" height="3rem" class="m-6 text-white"></iconify-icon>
+                                </span>
+                                <p class="m-0 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum et architecto provident ut sint numquam iusto sunt ipsam nostrum dolorum.</p>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="flex mr-4 bg-verde-500 rounded-full">
+                                    <iconify-icon icon="tabler:message" height="3rem" class="m-6 text-white"></iconify-icon>
+                                </span>
+                                <p class="m-0 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum et architecto provident ut sint numquam iusto sunt ipsam nostrum dolorum.</p>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="flex mr-4 bg-verde-500 rounded-full">
+                                    <iconify-icon icon="tabler:heart-handshake" height="3rem" class="m-6 text-white"></iconify-icon>
+                                </span>
+                                <p class="m-0 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum et architecto provident ut sint numquam iusto sunt ipsam nostrum dolorum.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-span-2 flex flex-col justify-center">
+                        <h1>Somos um Coworking</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit nulla necessitatibus labore recusandae, ex mollitia aut quidem eligendi molestiae quibusdam esse nisi quo saepe possimus dolores nesciunt cupiditate fugit quisquam?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit nulla necessitatibus labore recusandae, ex mollitia aut quidem eligendi molestiae quibusdam esse nisi quo saepe possimus dolores nesciunt cupiditate fugit quisquam?</p>
+                    </div>
+                </div>
+            </section>
+            <section id="servicos" class="bg-verde-300">
+                <div class="container grid-cols-3">
+                    <div class="bloco-servico">
+                        <picture class="aspect-square bg-neutral-200">
+                            <img src="f2d25d52d789f25f6f22.jpg" alt="Espaços Compartilhados SPWorking" class="w-full h-full object-cover object-left">
+                        </picture>
+                        <span>
+                            <h4>Salas Compartilhadas</h4>
+                            <h5 class="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolorum totam magni aliquid.</h5>
+                        </span>
+                    </div>
+                    <div class="bloco-servico">
+                        <picture class="aspect-square bg-neutral-200">
+                            <img src="ac9f960d3f88567617be.jpg" alt="Sala Privativa SPWorking" class="w-full h-full object-cover object-center">
+                        </picture>
+                        <span>
+                            <h4>Sala Privativa</h4>
+                            <h5 class="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolorum totam magni aliquid.</h5>
+                        </span>
+                    </div>
+                    <div class="bloco-servico">
+                        <picture class="aspect-square bg-neutral-200">
+                            <img src="bcab78edafdbe748fe04.jpg" alt="Sala de Reunião SPWorking" class="w-full h-full object-cover object-right">
+                        </picture>
+                        <span>
+                            <h4>Sala de Reunião</h4>
+                            <h5 class="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolorum totam magni aliquid.</h5>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section id="beneficios" class="bg-gradient-to-b from-verde-300 from-50% to-white to-50% py-0">
+                <div class="container grid-cols-8 gap-4">
+                    <span class="aspect-square flex-col bg-white shadow-xl rounded justify-center">
+                        <iconify-icon height="2.5rem" class="mx-auto mb-2 text-neutral-800" icon="tabler:wifi"></iconify-icon>
+                        <p class="mx-auto my-0 text-xs">Redes Wi-Fi</p>
+                    </span>
+                    <span class="aspect-square flex-col bg-white shadow-xl rounded justify-center">
+                        <iconify-icon height="2.5rem" class="mx-auto mb-2 text-neutral-800" icon="tabler:packages"></iconify-icon>
+                        <p class="mx-auto my-0 text-xs">Armários</p>
+                    </span>
+                    <span class="aspect-square flex-col bg-white shadow-xl rounded justify-center">
+                        <iconify-icon height="2.5rem" class="mx-auto mb-2 text-neutral-800" icon="tabler:glass-cocktail"></iconify-icon>
+                        <p class="mx-auto my-0 text-xs">Happy Hour</p>
+                    </span>
+                    <span class="aspect-square flex-col bg-white shadow-xl rounded justify-center">
+                        <iconify-icon height="2.5rem" class="mx-auto mb-2 text-neutral-800" icon="tabler:brand-wechat"></iconify-icon>
+                        <p class="mx-auto my-0 text-xs">Descontração</p>
+                    </span>
+                    <span class="aspect-square flex-col bg-white shadow-xl rounded justify-center">
+                        <iconify-icon height="2.5rem" class="mx-auto mb-2 text-neutral-800" icon="tabler:tools-kitchen-2"></iconify-icon>
+                        <p class="mx-auto my-0 text-xs">Cozinha</p>
+                    </span>
+                    <span class="aspect-square flex-col bg-white shadow-xl rounded justify-center">
+                        <iconify-icon height="2.5rem" class="mx-auto mb-2 text-neutral-800" icon="tabler:hand-sanitizer"></iconify-icon>
+                        <p class="mx-auto my-0 text-xs">Faxina</p>
+                    </span>
+                    <span class="aspect-square flex-col bg-white shadow-xl rounded justify-center">
+                        <iconify-icon height="2.5rem" class="mx-auto mb-2 text-neutral-800" icon="tabler:file-text"></iconify-icon>
+                        <p class="mx-auto my-0 text-xs">Impressoras</p>
+                    </span>
+                    <span class="aspect-square flex-col bg-white shadow-xl rounded justify-center">
+                        <iconify-icon height="2.5rem" class="mx-auto mb-2 text-neutral-800" icon="tabler:leaf"></iconify-icon>
+                        <p class="mx-auto my-0 text-xs">Natureza</p>
+                    </span>
+                </div>
+            </section>
+            <section id="galeria" class="">
+                <h1 class="container text-center">Galeria</h1>
+                <div class="container grid-cols-3">
+                    <picture class="img-galeria row-span-2 ">
+                        <img src="d8a277b4cba1424761cd.jpg" alt="" class="w-full object-center object-cover">
+                    </picture>
+                    <picture class="img-galeria">
+                        <img src="d8a277b4cba1424761cd.jpg" alt="" class="w-full object-center object-cover">
+                    </picture>
+                    <picture class="img-galeria">
+                        <img src="d8a277b4cba1424761cd.jpg" alt="" class="w-full object-center object-cover">
+                    </picture>
+                    <picture class="img-galeria">
+                        <img src="d8a277b4cba1424761cd.jpg" alt="" class="w-full object-center object-cover">
+                    </picture>
+                    <picture class="img-galeria">
+                        <img src="d8a277b4cba1424761cd.jpg" alt="" class="w-full object-center object-cover">
+                    </picture>
+                    <picture class="img-galeria">
+                        <img src="d8a277b4cba1424761cd.jpg" alt="" class="w-full object-center object-cover">
+                    </picture>
+                    <picture class="img-galeria col-span-2 row-span-2">
+                        <img src="d8a277b4cba1424761cd.jpg" alt="" class="w-full object-center object-cover">
+                    </picture>
+                    <picture class="img-galeria">
+                        <img src="d8a277b4cba1424761cd.jpg" alt="" class="w-full object-center object-cover">
+                    </picture>
+                </div>
+            </section>
+            <section id="comentarios" class="bg-verde-300">
+                <h1 class="container text-roxo-800 text-center mb-12">Nossos Clientes Comprovam</h1>
+                <div class="container relative">
+                    <iconify-icon height="3rem" class="text-roxo-800 absolute z-20 cursor-pointer -left-20" id="prev" icon="tabler:chevron-left"></iconify-icon>
+                    <iconify-icon height="3rem" class="text-roxo-800 absolute z-20 cursor-pointer -right-20" id="next" icon="tabler:chevron-right"></iconify-icon>
+                    <div class="w-full flex">
+                        <div class="slide relative m-4 border border-roxo-800 hidden">
+                            <picture class="aspect-square shadow-xl w-32 absolute -top-4 -left-4">
+                                <img src="d697e6f81fd072ce655f.jpg" alt="">
+                            </picture>
+                            <span class="p-8 flex-col ml-28">
+                                <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
+                                <h3 class="text-roxo-800 m-0">Aline Damasceno</h3>
+                                <h5 class="text-neutral-800">Advogada</h5>
+                                <h5 class="text-neutral-800">slide 00</h5>
+                            </span>
+                        </div>
+                        <div class="slide relative m-4 border border-roxo-800 hidden">
+                            <picture class="aspect-square shadow-xl w-32 absolute -top-4 -left-4">
+                                <img src="c64b1147210575c70fa0.jpg" alt="">
+                            </picture>
+                            <span class="p-8 flex-col ml-28">
+                                <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
+                                <h3 class="text-roxo-800 m-0">Luciano Pereira</h3>
+                                <h5 class="text-neutral-800">TEX Inovações</h5>
+                                <h5 class="text-neutral-800">slide 01</h5>
+                            </span>
+                        </div>
+                        <div class="slide relative m-4 border border-roxo-800 hidden">
+                            <picture class="aspect-square shadow-xl w-32 absolute -top-4 -left-4">
+                                <img src="c64b1147210575c70fa0.jpg" alt="">
+                            </picture>
+                            <span class="p-8 flex-col ml-28">
+                                <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
+                                <h3 class="text-roxo-800 m-0">Luciano Pereira</h3>
+                                <h5 class="text-neutral-800">TEX Inovações</h5>
+                                <h5 class="text-neutral-800">slide 02</h5>
+                            </span>
+                        </div>
+                        <div class="slide relative m-4 border border-roxo-800 hidden">
+                            <picture class="aspect-square shadow-xl w-32 absolute -top-4 -left-4">
+                                <img src="c64b1147210575c70fa0.jpg" alt="">
+                            </picture>
+                            <span class="p-8 flex-col ml-28">
+                                <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
+                                <h3 class="text-roxo-800 m-0">Luciano Pereira</h3>
+                                <h5 class="text-neutral-800">TEX Inovações</h5>
+                                <h5 class="text-neutral-800">slide 03</h5>
+                            </span>
+                        </div>
+                        <div class="slide relative m-4 border border-roxo-800 hidden">
+                            <picture class="aspect-square shadow-xl w-32 absolute -top-4 -left-4">
+                                <img src="c64b1147210575c70fa0.jpg" alt="">
+                            </picture>
+                            <span class="p-8 flex-col ml-28">
+                                <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
+                                <h3 class="text-roxo-800 m-0">Luciano Pereira</h3>
+                                <h5 class="text-neutral-800">TEX Inovações</h5>
+                                <h5 class="text-neutral-800">slide 04</h5>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="localizacao">
+                <div class="container">
+                    <span class="flex-col">
+                        <h1 class="text-center">Localização Privilegiada</h1>
+                        <span class="flex-col text-center mb-8">
+                            <iconify-icon icon="tabler:map-pin-filled" height="3rem" class="mb-2 mx-auto text-roxo-500"></iconify-icon>
+                            <p class="m-0">Rua Tenente Aviador Mota Lima, 170<br>City Caxingui - CEP 05517-030<br>São Paulo - SP</p>
+                        </span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio omnis, porro placeat cum ad vitae beatae cupiditate minus error animi sapiente quia, consectetur, aliquam molestias quo eius iste alias aliquid!</p>
+                    </span>
+                    <div class="flex w-full h-[50dvh] overflow-hidden rounded-lg bg-neutral-800">
+                        <div class="card group bg-shop-butanta">
+                            <div class="pelicula">
+                                <span class="text-card group-hover:opacity-100">
+                                    <h3 class="z-20 text-neutral-200 transition-all">Shopping Butantã</h3>
+                                    <p class="text-neutral-200">100m</p>
+                                    <p class="text-neutral-200 text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maiores eveniet? Nobis ipsa facere aspernatur minus dignissimos nam, illo eaque consectetur, itaque illum quisquam aliquid aliquam quam pariatur iure totam?</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card group bg-merc-pao-acucar">
+                            <div class="pelicula">
+                                <span class="text-card group-hover:opacity-100">
+                                    <h3 class="z-20 text-neutral-200 transition-all">Mercado Pão de Açucar</h3>
+                                    <p class="text-neutral-200">100m</p>
+                                    <p class="text-neutral-200 text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maiores eveniet? Nobis ipsa facere aspernatur minus dignissimos nam, illo eaque consectetur, itaque illum quisquam aliquid aliquam quam pariatur iure totam?</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card group bg-merc-sams-club">
+                            <div class="pelicula">
+                                <span class="text-card group-hover:opacity-100">
+                                    <h3 class="z-20 text-neutral-200 transition-all">Mercado Sam's Club</h3>
+                                    <p class="text-neutral-200">100m</p>
+                                    <p class="text-neutral-200 text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maiores eveniet? Nobis ipsa facere aspernatur minus dignissimos nam, illo eaque consectetur, itaque illum quisquam aliquid aliquam quam pariatur iure totam?</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card group bg-corr-onibus">
+                            <div class="pelicula">
+                                <span class="text-card group-hover:opacity-100">
+                                    <h3 class="z-20 text-neutral-200 transition-all">Corredor de Ônibus</h3>
+                                    <p class="text-neutral-200">100m</p>
+                                    <p class="text-neutral-200 text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maiores eveniet? Nobis ipsa facere aspernatur minus dignissimos nam, illo eaque consectetur, itaque illum quisquam aliquid aliquam quam pariatur iure totam?</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--
+            <section>
+                <h1 class="container">Planos e Preços</h1>
+                <div class="container grid-cols-3">
+                    <table class="tab-precos border-0 border-roxo-500 p-8 rounded col-span-2">
+                        <thead>
+                            <tr class="tab-linha">
+                                <th class="px-6 py-3 text-xs bg-roxo-100 text-roxo-500 w-2/6">Serviço</th>
+                                <th class="px-6 py-3 text-xs bg-roxo-100 text-roxo-500 w-1/6">Diária</th>
+                                <th class="px-6 py-3 text-xs bg-roxo-100 text-roxo-500 w-1/6">Mesal</th>
+                                <th class="px-6 py-3 text-xs bg-roxo-100 text-roxo-500 w-1/6">Anual</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tab-linha">
+                                <td class="text-left font-extrabold">Estação Individual</td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <span class="text-[10px]">R$</span>
+                                        <span>49</span>
+                                    </span>
+                                </td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <span class="text-[10px]">R$</span>
+                                        <span>490</span>
+                                    </span>
+                                </td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <span class="text-[10px]">R$</span>
+                                        <span>5.880</span>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="tab-linha">
+                                <td class="text-left font-extrabold">Sala de Reunião Int.</td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <span class="text-[10px]">R$</span>
+                                        <span>200</span>
+                                    </span>
+                                </td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <iconify-icon icon="tabler:x" height=".8rem" class="m-auto text-neutral-300"></iconify-icon>
+                                    </span>
+                                </td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <iconify-icon icon="tabler:x" height=".8rem" class="m-auto text-neutral-300"></iconify-icon>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="tab-linha">
+                                <td class="text-left font-extrabold">Sala de Reunião Ext.</td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <span class="text-[10px]">R$</span>
+                                        <span>249</span>
+                                    </span>
+                                </td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <iconify-icon icon="tabler:x" height=".8rem" class="m-auto text-neutral-300"></iconify-icon>
+                                    </span>
+                                </td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <iconify-icon icon="tabler:x" height=".8rem" class="m-auto text-neutral-300"></iconify-icon>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="tab-linha">
+                                <td class="text-left font-extrabold">Sala 5 pessoas</td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <iconify-icon icon="tabler:x" height=".8rem" class="m-auto text-neutral-300"></iconify-icon>
+                                    </span>
+                                </td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <span class="text-[10px]">R$</span>
+                                        <span>1.599</span>
+                                    </span>
+                                </td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <span class="text-[10px]">R$</span>
+                                        <span>19.188</span>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="tab-linha">
+                                <td class="text-left font-extrabold">Sala 6 pessoas</td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <iconify-icon icon="tabler:x" height=".8rem" class="m-auto text-neutral-300"></iconify-icon>
+                                    </span>
+                                </td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <span class="text-[10px]">R$</span>
+                                        <span>2.499</span>
+                                    </span>
+                                </td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <span class="text-[10px]">R$</span>
+                                        <span>29.988</span>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="tab-linha">
+                                <td class="text-left font-extrabold">Sala 10 pessoas</td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <iconify-icon icon="tabler:x" height=".8rem" class="m-auto text-neutral-300"></iconify-icon>
+                                    </span>
+                                </td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <span class="text-[10px]">R$</span>
+                                        <span>3.199</span>
+                                    </span>
+                                </td>
+                                <td class="cel-valores">
+                                    <span class="px-3">
+                                        <span class="text-[10px]">R$</span>
+                                        <span>38.388</span>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta officia incidunt aliquid quidem iste, tenetur consequatur? Eveniet, exercitationem reprehenderit, magni voluptatem tempore numquam in eos beatae accusamus repellendus molestias. Dignissimos!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta officia incidunt aliquid quidem iste, tenetur consequatur? Eveniet, exercitationem reprehenderit, magni voluptatem tempore numquam in eos beatae accusamus repellendus molestias. Dignissimos!</p>
+                    </div>
+                </div>
+            </section>
+            -->
+            <section class="py-12 bg-gradient-to-r from-verde-300 to-verde-500">
+                <div class="container">
+                    <span class="justify-between">
+                        <h2 class="mr-4 my-auto text-neutral-800">Increva-se em nossa Newsletter</h2>
+                        <form class="w-1/2">
+                            <input type="email" name="" id="" placeholder="E-mail" class="w-5/6">
+                            <button class="btn btn-roxo">
+                                <strong>Enviar</strong>
+                            </button>
+                        </form>
+                    </span>
+                </div>
+            </section>
         </main>
+        <footer class="text-neutral-200">
+            <section class="bg-neutral-800">
+                <div class="container px-28 text-center mb-8">
+                    <img src="5b43d2e7a72e4336b5bb.png" alt="" class="mx-auto w-2/6">
+                    <h2 class="text-neutral-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem tenetur quaerat eum illo temporibus</h2>
+                </div>
+                <div class="container grid-cols-4 w-1/4">
+                    <a href="http://" target="_blank">
+                        <iconify-icon icon="tabler:brand-linkedin" height="1.5rem" class="m-auto border-2 border-verde-500 text-verde-500 p-2 rounded-full cursor-pointer"></iconify-icon>
+                    </a>
+                    <a href="https://www.instagram.com/spworking/" target="_blank">
+                        <iconify-icon icon="tabler:brand-instagram" height="1.5rem" class="m-auto border-2 border-verde-500 text-verde-500 p-2 rounded-full cursor-pointer"></iconify-icon>
+                    </a>
+                    <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank">
+                        <iconify-icon icon="tabler:brand-whatsapp" height="1.5rem" class="m-auto border-2 border-verde-500 text-verde-500 p-2 rounded-full cursor-pointer"></iconify-icon>
+                    </a>
+                    <a href="mailto:contato@spworking.com.br" target="_blank">
+                        <iconify-icon icon="tabler:mail" height="1.5rem" class="m-auto border-2 border-verde-500 text-verde-500 p-2 rounded-full cursor-pointer"></iconify-icon>
+                    </a>
+                </div>
+            </section>
+            <section class="py-8 bg-neutral-900">
+                <div class="container">
+                    <span class="justify-between">
+                        <h5 class="text-neutral-200">SPWorking Butantã - 2024 | Todos os direitos reservados</h5>
+                        <h5 class="text-neutral-200">criador por <a href="https://github.com/douglas-moura" target="_blank" class="text-roxo-100">Douglas Moura</a></h5>
+                    </span>
+                </div>
+            </section>
+        </footer>
+        <script src="11b162f21f336f37fb5b.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
     </body>
 </html>
