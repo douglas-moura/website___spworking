@@ -112,7 +112,7 @@
     }
 
     .slide {
-        @apply w-1/2
+        @apply min-w-[400px] max-w-[440px]
     }
 
     .pelicula {

@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 module.exports = {
     entry: './src/index.ts',                                            // arquivo de entrada
     output: {
-        filename: 'bundle.js',                                          // arquivo de saida
+        filename: 'index.js',                                          // arquivo de saida
         path: path.resolve(__dirname, 'dist'),                          // pasta de saida
         clean: true                                                     // limpar a pasta de saida a cada build
     },
@@ -34,10 +34,10 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|jpg|jpeg|gif|svg)$/,                      // Processa imagens
+                test: /\.(png|jpg|jpeg|gif|svg|webp)$/,                 // Processa imagens
                 type: 'asset/resource',
                 generator: {
-                    filename: 'img/[hash][ext][query]',        // Define o nome do arquivo final
+                    filename: 'img/[hash][ext][query]',                 // Define o nome do arquivo final
                 }
             },
             {
@@ -57,7 +57,7 @@ module.exports = {
             filename: 'index.html'                                      // Nome do arquivo de saida
         }),
         new MiniCssExtractPlugin({
-            filename: 'style.css'                                       // Nome do arquivo de saida
+            filename: 'index.css'                                       // Nome do arquivo de saida
         })
     ],
     mode: 'development',
