@@ -172,8 +172,8 @@
                             <h2 id="img-title" class="text-neutral-200 m-0">Imagem Nome</h2>
                             <iconify-icon id="btn-fechar-visualizador" height="3rem" class="text-neutral-200 m-0 cursor-pointer transition-all hover:scale-110 hover:rotate-90" icon="tabler:x"></iconify-icon>
                         </span>
-                        <picture class="w-full rounded">
-                            <img alt="Imagem Selecionada" id="img-visualizador" src="./assets/img/cliente-01.jpg" class="w-full object-center object-cover">
+                        <picture class="w-full rounded select-none">
+                            <img alt="Imagem Selecionada" id="img-visualizador" src="./assets/img/cliente-01.jpg" class="w-full object-center object-cover select-none">
                         </picture>
                         <img src="./assets/img/logo-spworking-branco.png" alt="Logotipo SPWorking" class="h-4 mx-auto">
                     </div>
@@ -183,9 +183,11 @@
                 <h1 id="tilt" class="container text-roxo-800 text-center mb-12">Nossos Clientes Comprovam</h1>
                 <div class="container relative min-h-72">
                     <iconify-icon height="3rem" class="text-roxo-800 select-none absolute z-20 cursor-pointer -left-20" id="prev" icon="tabler:chevron-left"></iconify-icon>
+                    <div class="w-20 select-none absolute z-10 cursor-default -left-10 h-full bg-gradient-to-r from-verde-300 from-50% to-[#00000001]"></div>
                     <iconify-icon height="3rem" class="text-roxo-800 select-none absolute z-20 cursor-pointer -right-20" id="next" icon="tabler:chevron-right"></iconify-icon>
+                    <div class="w-20 select-none absolute z-10 cursor-default -right-10 h-full bg-gradient-to-r from-[#00000001] to-verde-300 to-50%"></div>
                     <div class="w-full flex overflow-hidden">
-                        <span id="slider" class="transition-all h-full" style="margin-left: 0px; margin-right: 0px;">
+                        <span id="slider" class="transition-all h-full px-10" style="margin-left: 0px; margin-right: 0px;">
                             <div class="slide">
                                 <picture class="aspect-square shadow-xl w-32 absolute -top-[20px] -left-[20px]">
                                     <img src="./assets/img/cliente-01.jpg" alt="">
