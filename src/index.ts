@@ -1,6 +1,21 @@
 import './assets/css/style.css'
-import { abrirImagem } from './assets/functions/imgFunctions'
-import { slide } from './assets/functions/sliderShow'
+import { menu, rodapeInfos, rodapeFinal } from './functions/_layouts'
+import { abrirImagem } from './functions/imgFunctions'
+import { slide } from './functions/sliderShow'
+
+window.addEventListener('load', () => {
+    const headerPagina = document.getElementById('header-pagina') as HTMLHeadElement
+    const footerPagina = document.getElementById('footer-pagina') as HTMLHeadElement
+
+    const menuContent: HTMLElement = menu()
+    headerPagina.appendChild(menuContent)
+
+    const rodapeInfosContent: HTMLElement = rodapeInfos()
+    footerPagina.appendChild(rodapeInfosContent)
+
+    const rodapFimContent: HTMLElement = rodapeFinal()
+    footerPagina.appendChild(rodapFimContent)
+})
 
 // SLIDESHOW TESTEMUNHAL CLIENTES
 const btnPrev = document.getElementById('prev') as HTMLElement
@@ -14,3 +29,4 @@ const galeriaImagens = document.getElementsByClassName('img-galeria') as HTMLCol
 for (let i = 0; i < galeriaImagens.length; i++) {
     galeriaImagens[i].addEventListener('click', () => abrirImagem(galeriaImagens[i].attributes[2].value, galeriaImagens[i].attributes[1].value))
 }
+
