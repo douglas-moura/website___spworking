@@ -112,7 +112,7 @@
     }
 
     .slide {
-        @apply min-w-[400px] max-w-[440px]
+        @apply min-w-[400px] max-w-[440px] relative m-[20px] border border-roxo-800
     }
 
     .pelicula {
