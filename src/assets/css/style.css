@@ -103,7 +103,7 @@
         @apply bg-roxo-500 text-white absolute -top-6 left-4 h-12 w-4/6 flex flex-col justify-center p-4
     }
 
-    .img-galeria {
+    .bloco-galeria {
         @apply shadow-lg min-h-52 cursor-pointer
     }
 
