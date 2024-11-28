@@ -1,4 +1,4 @@
-const logoSrc = 'img/5b43d2e7a72e4336b5bb.png'
+const logoSrc = '../img/5b43d2e7a72e4336b5bb.png'
 
 export const menu = (): HTMLElement => {
     const sessao = document.createElement('section')
@@ -6,14 +6,20 @@ export const menu = (): HTMLElement => {
 
     sessao.innerHTML +=
         `
-            <nav class="container grid-cols-2">
+            <nav class="container grid-cols-3">
                 <img src="${logoSrc}" alt="Logotipo SPWorking" class="h-6 cursor-pointer">
-                <ul class="inline-flex items-center h-full justify-between text-white">
-                    <li class=""><a href="">Home</a></li>
-                    <li class=""><a href="">Galeria</a></li>
-                    <li class=""><a href="">Serviços</a></li>
-                    <li class=""><a href="">Localização</a></li>
-                    <li class=""><a href="">Contato</a></li>
+                <ul class="inline-flex items-center h-full justify-between text-white col-span-2">
+                    <li class=""><a href="/#banner">Home</a></li>
+                    <li class=""><a href="/#servicos">Serviços</a></li>
+                    <li class=""><a href="/#galeria">Galeria</a></li>
+                    <li class=""><a href="/#localizacao">Localização</a></li>
+                    <li class=""><a href="pages/planos.html">Planos</a></li>
+                    <li class="">
+                        <span class="ml-2 text-sm items-center">
+                            <iconify-icon icon="tabler:brand-whatsapp" height="1rem" class="mr-2 bg-[#25D366] rounded-full p-2"></iconify-icon>
+                            11 98765-4321
+                        </span>
+                    </li>
                 </ul>
             </nav>
         `
@@ -27,7 +33,7 @@ export const rodapeInfos = (): HTMLElement => {
     sessao.innerHTML += 
         `
             <div class="container px-28 text-center mb-8">
-                <img src="./assets/img/logo-spworking-branco.png" alt="" class="mx-auto w-2/6">
+                <img src="${logoSrc}" alt="" class="mx-auto w-2/6">
                 <h2 class="text-neutral-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem tenetur quaerat eum illo temporibus</h2>
             </div>
             <div class="container grid-cols-4 w-1/4">
@@ -44,6 +50,7 @@ export const rodapeInfos = (): HTMLElement => {
                     <iconify-icon icon="tabler:mail" height="1.5rem" class="m-auto border-2 border-verde-500 text-verde-500 p-2 rounded-full cursor-pointer"></iconify-icon>
                 </a>
             </div>
+            <script src="../index.ts"></script>
         `
     return sessao
 }

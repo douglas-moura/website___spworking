@@ -6,21 +6,8 @@
         <title>SPWorking</title>
     <script defer src="index.js"></script><link href="index.css" rel="stylesheet"></head>
     <body>
-        <header class="z-40 py-4 fixed top-0 w-full bg-[#000000bb]">
-            <section class="py-6">
-                <nav class="container grid-cols-2">
-                    <h2 class="text-neutral-200 my-auto">
-                        <img src="img/5b43d2e7a72e4336b5bb.png" alt="Logotipo SPWorking" class="h-6">
-                    </h2>
-                    <ul class="inline-flex items-center h-full justify-between text-white">
-                        <li class=""><a href="">Home</a></li>
-                        <li class=""><a href="">Galeria</a></li>
-                        <li class=""><a href="">Serviços</a></li>
-                        <li class=""><a href="">Localização</a></li>
-                        <li class=""><a href="">Contato</a></li>
-                    </ul>
-                </nav>
-            </section>
+        <header id="header-pagina" class="z-40 py-4 fixed top-0 w-full bg-[#000000bb] backdrop-blur-sm">
+            <!-- Menu de navegação renderizado aqui -->
         </header>
         <main>
             <section id="banner" class="min-h-96 items-center pt-40 pb-20 mt-0 bg-escritorio-banner bg-center bg-cover">
@@ -81,7 +68,7 @@
                 <div class="container grid-cols-3">
                     <div class="bloco-servico">
                         <picture class="aspect-square bg-neutral-200">
-                            <img src="img/f2d25d52d789f25f6f22.jpg" alt="Espaços Compartilhados SPWorking" class="w-full h-full object-cover object-left">
+                            <img src="img/bf0138b701df8102ba74.png" alt="Espaços Compartilhados SPWorking" class="w-full h-full object-cover object-left">
                         </picture>
                         <span>
                             <h4>Salas Compartilhadas</h4>
@@ -90,7 +77,7 @@
                     </div>
                     <div class="bloco-servico">
                         <picture class="aspect-square bg-neutral-200">
-                            <img src="img/ac9f960d3f88567617be.jpg" alt="Sala Privativa SPWorking" class="w-full h-full object-cover object-center">
+                            <img src="img/0e870851f647a5a77ed6.jpg" alt="Sala Privativa SPWorking" class="w-full h-full object-cover object-center">
                         </picture>
                         <span>
                             <h4>Sala Privativa</h4>
@@ -99,7 +86,7 @@
                     </div>
                     <div class="bloco-servico">
                         <picture class="aspect-square bg-neutral-200">
-                            <img src="img/bcab78edafdbe748fe04.jpg" alt="Sala de Reunião SPWorking" class="w-full h-full object-cover object-right">
+                            <img src="img/9f3c60a1ed5d484056ae.jpg" alt="Sala de Reunião SPWorking" class="w-full h-full object-cover object-right">
                         </picture>
                         <span>
                             <h4>Sala de Reunião</h4>
@@ -109,7 +96,7 @@
                 </div>
             </section>
             <section id="beneficios" class="bg-gradient-to-b from-verde-300 from-50% to-white to-50% py-0">
-                <div class="container grid-cols-8 gap-4">
+                <div class="container grid-cols-7 gap-4">
                     <span class="aspect-square flex-col bg-white shadow-xl rounded justify-center">
                         <iconify-icon height="2.5rem" class="mx-auto mb-2 text-neutral-800" icon="tabler:wifi"></iconify-icon>
                         <p class="mx-auto my-0 text-xs">Redes Wi-Fi</p>
@@ -123,12 +110,8 @@
                         <p class="mx-auto my-0 text-xs">Happy Hour</p>
                     </span>
                     <span class="aspect-square flex-col bg-white shadow-xl rounded justify-center">
-                        <iconify-icon height="2.5rem" class="mx-auto mb-2 text-neutral-800" icon="tabler:brand-wechat"></iconify-icon>
-                        <p class="mx-auto my-0 text-xs">Descontração</p>
-                    </span>
-                    <span class="aspect-square flex-col bg-white shadow-xl rounded justify-center">
                         <iconify-icon height="2.5rem" class="mx-auto mb-2 text-neutral-800" icon="tabler:tools-kitchen-2"></iconify-icon>
-                        <p class="mx-auto my-0 text-xs">Cozinha</p>
+                        <p class="mx-auto my-0 text-xs">Copa</p>
                     </span>
                     <span class="aspect-square flex-col bg-white shadow-xl rounded justify-center">
                         <iconify-icon height="2.5rem" class="mx-auto mb-2 text-neutral-800" icon="tabler:hand-sanitizer"></iconify-icon>
@@ -139,101 +122,112 @@
                         <p class="mx-auto my-0 text-xs">Impressoras</p>
                     </span>
                     <span class="aspect-square flex-col bg-white shadow-xl rounded justify-center">
-                        <iconify-icon height="2.5rem" class="mx-auto mb-2 text-neutral-800" icon="tabler:leaf"></iconify-icon>
-                        <p class="mx-auto my-0 text-xs">Natureza</p>
+                        <iconify-icon height="2.5rem" class="mx-auto mb-2 text-neutral-800" icon="tabler:brand-wechat"></iconify-icon>
+                        <p class="mx-auto my-0 text-xs">Networks</p>
                     </span>
                 </div>
             </section>
             <section id="galeria" class="">
                 <h1 class="container text-center">Galeria</h1>
                 <div class="container grid-cols-3">
-                    <picture class="img-galeria row-span-2 ">
-                        <img src="img/d8a277b4cba1424761cd.jpg" alt="" class="w-full object-center object-cover">
+                    <picture class="bloco-galeria row-span-2 ">
+                        <img class="img-galeria w-full object-center object-cover" alt="Sala com Estações Compartilhadas" src="img/78efbad0ee46aa5a11f1.jpg">
                     </picture>
-                    <picture class="img-galeria">
-                        <img src="img/d8a277b4cba1424761cd.jpg" alt="" class="w-full object-center object-cover">
+                    <picture class="bloco-galeria">
+                        <img class="img-galeria w-full object-center object-cover" alt="Copa Coworking" src="img/bda7255e5ac493910159.jpg">
                     </picture>
-                    <picture class="img-galeria">
-                        <img src="img/d8a277b4cba1424761cd.jpg" alt="" class="w-full object-center object-cover">
+                    <picture class="bloco-galeria">
+                        <img class="img-galeria w-full object-center object-cover" alt="Sala com Estações Compartilhadas" src="img/e4ead504d8e844bb0384.jpg">
                     </picture>
-                    <picture class="img-galeria">
-                        <img src="img/d8a277b4cba1424761cd.jpg" alt="" class="w-full object-center object-cover">
+                    <picture class="bloco-galeria">
+                        <img class="img-galeria w-full object-center object-cover" alt="Sala com Estações Compartilhadas" src="img/bd403eb5c8f3287023f6.jpg">
                     </picture>
-                    <picture class="img-galeria">
-                        <img src="img/d8a277b4cba1424761cd.jpg" alt="" class="w-full object-center object-cover">
+                    <picture class="bloco-galeria">
+                        <img class="img-galeria w-full object-center object-cover" alt="Sala de Reunião" src="img/9f3c60a1ed5d484056ae.jpg">
                     </picture>
-                    <picture class="img-galeria">
-                        <img src="img/d8a277b4cba1424761cd.jpg" alt="" class="w-full object-center object-cover">
+                    <picture class="bloco-galeria">
+                        <img class="img-galeria w-full object-center object-cover" alt="Sala Privada para Equipes" src="img/0e870851f647a5a77ed6.jpg">
                     </picture>
-                    <picture class="img-galeria col-span-2 row-span-2">
-                        <img src="img/d8a277b4cba1424761cd.jpg" alt="" class="w-full object-center object-cover">
+                    <picture class="bloco-galeria col-span-2 row-span-2">
+                        <img class="img-galeria w-full object-center object-cover" alt="Sala com Estações Compartilhadas" src="img/df51eb4d1dd47c51de65.jpg">
                     </picture>
-                    <picture class="img-galeria">
-                        <img src="img/d8a277b4cba1424761cd.jpg" alt="" class="w-full object-center object-cover">
+                    <picture class="bloco-galeria">
+                        <img class="img-galeria w-full object-center object-cover" alt="Sala com Poltronas" src="img/2529622c0b7f999cacd9.jpg">
                     </picture>
                 </div>
+                <span id="visualizador-img-bloco" class="fixed z-50 w-full h-dvh top-0 left-0 bg-[#000000ce] backdrop-blur-xl -translate-y-full transition-all duration-300 delay-150">
+                    <div class="container py-24">
+                        <span class="flex-row justify-between items-center">
+                            <h2 id="img-title" class="text-neutral-200 m-0">Imagem Nome</h2>
+                            <iconify-icon id="btn-fechar-visualizador" height="3rem" class="text-neutral-200 m-0 cursor-pointer transition-all hover:scale-110 hover:rotate-90" icon="tabler:x"></iconify-icon>
+                        </span>
+                        <picture class="w-full rounded select-none">
+                            <img alt="Imagem Selecionada" id="img-visualizador" src="img/d697e6f81fd072ce655f.jpg" class="w-full object-center object-cover select-none">
+                        </picture>
+                        <img src="img/5b43d2e7a72e4336b5bb.png" alt="Logotipo SPWorking" class="h-4 mx-auto">
+                    </div>
+                </span>
             </section>
             <section id="comentarios" class="bg-verde-300">
-                <h1 class="container text-roxo-800 text-center mb-12">Nossos Clientes Comprovam</h1>
-                <div class="container relative">
-                    <iconify-icon height="3rem" class="text-roxo-800 absolute z-20 cursor-pointer -left-20" id="prev" icon="tabler:chevron-left"></iconify-icon>
-                    <iconify-icon height="3rem" class="text-roxo-800 absolute z-20 cursor-pointer -right-20" id="next" icon="tabler:chevron-right"></iconify-icon>
-                    <div class="w-full flex">
-                        <div class="slide relative m-4 border border-roxo-800 hidden">
-                            <picture class="aspect-square shadow-xl w-32 absolute -top-4 -left-4">
-                                <img src="img/d697e6f81fd072ce655f.jpg" alt="">
-                            </picture>
-                            <span class="p-8 flex-col ml-28">
-                                <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
-                                <h3 class="text-roxo-800 m-0">Aline Damasceno</h3>
-                                <h5 class="text-neutral-800">Advogada</h5>
-                                <h5 class="text-neutral-800">slide 00</h5>
-                            </span>
-                        </div>
-                        <div class="slide relative m-4 border border-roxo-800 hidden">
-                            <picture class="aspect-square shadow-xl w-32 absolute -top-4 -left-4">
-                                <img src="img/c64b1147210575c70fa0.jpg" alt="">
-                            </picture>
-                            <span class="p-8 flex-col ml-28">
-                                <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
-                                <h3 class="text-roxo-800 m-0">Luciano Pereira</h3>
-                                <h5 class="text-neutral-800">TEX Inovações</h5>
-                                <h5 class="text-neutral-800">slide 01</h5>
-                            </span>
-                        </div>
-                        <div class="slide relative m-4 border border-roxo-800 hidden">
-                            <picture class="aspect-square shadow-xl w-32 absolute -top-4 -left-4">
-                                <img src="img/c64b1147210575c70fa0.jpg" alt="">
-                            </picture>
-                            <span class="p-8 flex-col ml-28">
-                                <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
-                                <h3 class="text-roxo-800 m-0">Luciano Pereira</h3>
-                                <h5 class="text-neutral-800">TEX Inovações</h5>
-                                <h5 class="text-neutral-800">slide 02</h5>
-                            </span>
-                        </div>
-                        <div class="slide relative m-4 border border-roxo-800 hidden">
-                            <picture class="aspect-square shadow-xl w-32 absolute -top-4 -left-4">
-                                <img src="img/c64b1147210575c70fa0.jpg" alt="">
-                            </picture>
-                            <span class="p-8 flex-col ml-28">
-                                <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
-                                <h3 class="text-roxo-800 m-0">Luciano Pereira</h3>
-                                <h5 class="text-neutral-800">TEX Inovações</h5>
-                                <h5 class="text-neutral-800">slide 03</h5>
-                            </span>
-                        </div>
-                        <div class="slide relative m-4 border border-roxo-800 hidden">
-                            <picture class="aspect-square shadow-xl w-32 absolute -top-4 -left-4">
-                                <img src="img/c64b1147210575c70fa0.jpg" alt="">
-                            </picture>
-                            <span class="p-8 flex-col ml-28">
-                                <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
-                                <h3 class="text-roxo-800 m-0">Luciano Pereira</h3>
-                                <h5 class="text-neutral-800">TEX Inovações</h5>
-                                <h5 class="text-neutral-800">slide 04</h5>
-                            </span>
-                        </div>
+                <h1 id="tilt" class="container text-roxo-800 text-center mb-12">Nossos Clientes Comprovam</h1>
+                <div class="container relative min-h-72">
+                    <iconify-icon height="3rem" class="text-roxo-800 select-none absolute z-20 cursor-pointer -left-20" id="prev" icon="tabler:chevron-left"></iconify-icon>
+                    <div class="w-20 select-none absolute z-10 cursor-default -left-10 h-full bg-gradient-to-r from-verde-300 from-50% to-[#00000001]"></div>
+                    <iconify-icon height="3rem" class="text-roxo-800 select-none absolute z-20 cursor-pointer -right-20" id="next" icon="tabler:chevron-right"></iconify-icon>
+                    <div class="w-20 select-none absolute z-10 cursor-default -right-10 h-full bg-gradient-to-r from-[#00000001] to-verde-300 to-50%"></div>
+                    <div class="w-full flex overflow-hidden">
+                        <span id="slider" class="transition-all h-full px-10" style="margin-left: 0px; margin-right: 0px;">
+                            <div class="slide">
+                                <picture class="aspect-square shadow-xl w-32 absolute -top-[20px] -left-[20px]">
+                                    <img src="img/d697e6f81fd072ce655f.jpg" alt="">
+                                </picture>
+                                <span class="p-8 flex-col ml-28">
+                                    <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
+                                    <h3 class="text-roxo-800 m-0">Aline Damasceno</h3>
+                                    <h5 class="text-neutral-800">Advogada</h5>
+                                </span>
+                            </div>
+                            <div class="slide">
+                                <picture class="aspect-square shadow-xl w-32 absolute -top-[20px] -left-[20px]">
+                                    <img src="img/c64b1147210575c70fa0.jpg" alt="">
+                                </picture>
+                                <span class="p-8 flex-col ml-28">
+                                    <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
+                                    <h3 class="text-roxo-800 m-0">Luciano Pereira</h3>
+                                    <h5 class="text-neutral-800">TEX Inovações</h5>
+                                </span>
+                            </div>
+                            <div class="slide">
+                                <picture class="aspect-square shadow-xl w-32 absolute -top-[20px] -left-[20px]">
+                                    <img src="img/bbc4e4acbbfa8c1f8a40.jpg" alt="">
+                                </picture>
+                                <span class="p-8 flex-col ml-28">
+                                    <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
+                                    <h3 class="text-roxo-800 m-0">Fabiana Oliveira</h3>
+                                    <h5 class="text-neutral-800">FT-Austin</h5>
+                                </span>
+                            </div>
+                            <div class="slide">
+                                <picture class="aspect-square shadow-xl w-32 absolute -top-[20px] -left-[20px]">
+                                    <img src="img/a0e80062e617aebd3d7b.jpg" alt="">
+                                </picture>
+                                <span class="p-8 flex-col ml-28">
+                                    <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
+                                    <h3 class="text-roxo-800 m-0">Luiz Teodoro</h3>
+                                    <h5 class="text-neutral-800">Praticasting Inc.</h5>
+                                </span>
+                            </div>
+                            <div class="slide">
+                                <picture class="aspect-square shadow-xl w-32 absolute -top-[20px] -left-[20px]">
+                                    <img src="img/b80cf3f389c08c5c4072.jpg" alt="">
+                                </picture>
+                                <span class="p-8 flex-col ml-28">
+                                    <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
+                                    <h3 class="text-roxo-800 m-0">Fabio Andrade Jr.</h3>
+                                    <h5 class="text-neutral-800">Desenvolvedor Java</h5>
+                                </span>
+                            </div>
+                        </span>
                     </div>
                 </div>
             </section>
@@ -252,7 +246,7 @@
                             <div class="pelicula">
                                 <span class="text-card group-hover:opacity-100">
                                     <h3 class="z-20 text-neutral-200 transition-all">Shopping Butantã</h3>
-                                    <p class="text-neutral-200">100m</p>
+                                    <p class="text-neutral-200">250m</p>
                                     <p class="text-neutral-200 text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maiores eveniet? Nobis ipsa facere aspernatur minus dignissimos nam, illo eaque consectetur, itaque illum quisquam aliquid aliquam quam pariatur iure totam?</p>
                                 </span>
                             </div>
@@ -261,7 +255,7 @@
                             <div class="pelicula">
                                 <span class="text-card group-hover:opacity-100">
                                     <h3 class="z-20 text-neutral-200 transition-all">Mercado Pão de Açucar</h3>
-                                    <p class="text-neutral-200">100m</p>
+                                    <p class="text-neutral-200">140m</p>
                                     <p class="text-neutral-200 text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maiores eveniet? Nobis ipsa facere aspernatur minus dignissimos nam, illo eaque consectetur, itaque illum quisquam aliquid aliquam quam pariatur iure totam?</p>
                                 </span>
                             </div>
@@ -270,7 +264,7 @@
                             <div class="pelicula">
                                 <span class="text-card group-hover:opacity-100">
                                     <h3 class="z-20 text-neutral-200 transition-all">Mercado Sam's Club</h3>
-                                    <p class="text-neutral-200">100m</p>
+                                    <p class="text-neutral-200">170m</p>
                                     <p class="text-neutral-200 text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maiores eveniet? Nobis ipsa facere aspernatur minus dignissimos nam, illo eaque consectetur, itaque illum quisquam aliquid aliquam quam pariatur iure totam?</p>
                                 </span>
                             </div>
@@ -279,7 +273,7 @@
                             <div class="pelicula">
                                 <span class="text-card group-hover:opacity-100">
                                     <h3 class="z-20 text-neutral-200 transition-all">Corredor de Ônibus</h3>
-                                    <p class="text-neutral-200">100m</p>
+                                    <p class="text-neutral-200">80m</p>
                                     <p class="text-neutral-200 text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maiores eveniet? Nobis ipsa facere aspernatur minus dignissimos nam, illo eaque consectetur, itaque illum quisquam aliquid aliquam quam pariatur iure totam?</p>
                                 </span>
                             </div>
@@ -443,37 +437,10 @@
                 </div>
             </section>
         </main>
-        <footer class="text-neutral-200">
-            <section class="bg-neutral-800">
-                <div class="container px-28 text-center mb-8">
-                    <img src="img/5b43d2e7a72e4336b5bb.png" alt="" class="mx-auto w-2/6">
-                    <h2 class="text-neutral-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem tenetur quaerat eum illo temporibus</h2>
-                </div>
-                <div class="container grid-cols-4 w-1/4">
-                    <a href="http://" target="_blank">
-                        <iconify-icon icon="tabler:brand-linkedin" height="1.5rem" class="m-auto border-2 border-verde-500 text-verde-500 p-2 rounded-full cursor-pointer"></iconify-icon>
-                    </a>
-                    <a href="https://www.instagram.com/spworking/" target="_blank">
-                        <iconify-icon icon="tabler:brand-instagram" height="1.5rem" class="m-auto border-2 border-verde-500 text-verde-500 p-2 rounded-full cursor-pointer"></iconify-icon>
-                    </a>
-                    <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank">
-                        <iconify-icon icon="tabler:brand-whatsapp" height="1.5rem" class="m-auto border-2 border-verde-500 text-verde-500 p-2 rounded-full cursor-pointer"></iconify-icon>
-                    </a>
-                    <a href="mailto:contato@spworking.com.br" target="_blank">
-                        <iconify-icon icon="tabler:mail" height="1.5rem" class="m-auto border-2 border-verde-500 text-verde-500 p-2 rounded-full cursor-pointer"></iconify-icon>
-                    </a>
-                </div>
-            </section>
-            <section class="py-8 bg-neutral-900">
-                <div class="container">
-                    <span class="justify-between">
-                        <h5 class="text-neutral-200">SPWorking Butantã - 2024 | Todos os direitos reservados</h5>
-                        <h5 class="text-neutral-200">criador por <a href="https://github.com/douglas-moura" target="_blank" class="text-roxo-100">Douglas Moura</a></h5>
-                    </span>
-                </div>
-            </section>
+        <footer id="footer-pagina" class="text-neutral-200">
+            <!-- Rodapés renderizados aqui -->
         </footer>
-        <script src="2f5e6f8d87719ba9a16f.ts"></script>
+        <script src="66cc431c4f37d149dc4c.ts"></script>
         <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
     </body>
 </html>

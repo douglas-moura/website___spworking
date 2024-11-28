@@ -56,6 +56,10 @@ module.exports = {
             template: './src/index.html',                               // Arquivo html de origem
             filename: 'index.html'                                      // Nome do arquivo de saida
         }),
+        new HtmlWebpackPlugin({
+          template: './src/pages/planos.html',                          // Copia o arquivo planos.html
+          filename: 'pages/planos.html',                                // Coloca o HTML na pasta dist/pages
+        }),
         new MiniCssExtractPlugin({
             filename: 'index.css'                                       // Nome do arquivo de saida
         })
