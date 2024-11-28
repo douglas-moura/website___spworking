@@ -83,8 +83,16 @@
         @apply bg-verde-500 hover:bg-verde-700
     }
 
+    .btn-verde-2 {
+        @apply bg-verde-100 text-verde-700 hover:bg-verde-500 hover:text-white
+    }
+
     .btn-roxo {
-        @apply bg-roxo-500 hover:bg-roxo-800
+        @apply bg-roxo-500 text-white hover:bg-roxo-800
+    }
+
+    .btn-roxo-2 {
+        @apply bg-roxo-100 text-roxo-800 hover:bg-roxo-800
     }
 
     .btn-whats {
@@ -119,6 +127,38 @@
         @apply z-10 p-8 absolute w-full h-full top-0 left-0 bg-[#00000000] transition-all duration-150 group-hover:bg-gradient-to-b from-[#000000e1] from-40% to-[#0000001a]
     }
 
+    .bloco-plano {
+        @apply rounded-lg shadow bg-white p-6 min-w-[250px] min-h-[50dvh] mx-3 flex flex-col justify-between snap-center border border-white relative
+    }
+
+    .plano-especial {
+        @apply border-roxo-500 bg-gradient-to-b from-roxo-800 to-roxo-500
+    }
+
+    .plano-especial h3 {
+        @apply text-verde-300
+    }
+
+    .plano-especial p, button {
+        @apply text-white
+    }
+
+    .plano-especial li iconify-icon {
+        @apply text-verde-300
+    }
+
+    .plano-especial div {
+        @apply hidden
+    }
+
+    .plano-especial button {
+        @apply btn-roxo-2 border-2 border-roxo-100
+    }
+
+    .tab-titulo {
+        @apply px-6 py-3 text-xs bg-verde-300 text-neutral-800 first-of-type:rounded-ss-md last-of-type:rounded-tr-md
+    }
+
     .text-card {
         @apply break-words w-full flex-col opacity-0 transition-all duration-150 delay-200
     }
@@ -132,7 +172,7 @@
     }
 
     .cel-valores span {
-        @apply justify-between flex-row
+        @apply justify-between flex-row text-xs
     }
 }
 

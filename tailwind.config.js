@@ -9,6 +9,7 @@ module.exports = {
                 'nunito': ['Nunito', 'Helvetica', 'sans-serif']
             },
             colors: {
+                'verde-100': '#CAFCE3',
                 'verde-300': '#61F2C4',
                 'verde-500': '#00D6BA',
                 'verde-700': '#00919A',
@@ -25,6 +26,8 @@ module.exports = {
             }
         },
     },
-    plugins: [],
+    plugins: [
+        require('tailwind-scrollbar'),
+    ],
 }
 
