@@ -1,7 +1,8 @@
 import './assets/css/style.css'
-import { menu, rodapeInfos, rodapeFinal } from './functions/_layouts'
-import { abrirImagem } from './functions/imgFunctions'
+import { menu, rodapeInfos, rodapeFinal, blocoPlano } from './functions/layouts'
+import { abrirImagem } from './functions/imagemFunctions'
 import { slide } from './functions/sliderShow'
+import { Plano } from './functions/interfaces'
 
 console.log(window.location.pathname);
 
@@ -21,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 // FUNCIONALIDADES DA HOME
-if(window.location.pathname == '/') {
+if (window.location.pathname == '/') {
 
     // SLIDESHOW TESTEMUNHAL CLIENTES
     const btnPrev = document.getElementById('prev') as HTMLElement
@@ -38,7 +39,7 @@ if(window.location.pathname == '/') {
 }
 
 // FUNCIONALIDADES DA PÁGINA PLANOS
-if(window.location.pathname == '/pages/planos.html') {
+if (window.location.pathname == '/pages/planos.html') {
     const servicos = [
         { id: 0, servico: "Mesa Individual", diaria: 49, mensal: 490, anual: 5880, promo: null },
         { id: 1, servico: "Sala de Reunião", diaria: 249, mensal: null, anual: null, promo: true },
@@ -49,46 +50,10 @@ if(window.location.pathname == '/pages/planos.html') {
     const planosContainer = document.getElementById('planos-container') as HTMLDivElement
 
     for (let index = 0; index < servicos.length; index++) {
-        const plano = servicos[index]
+        const plano: Plano = servicos[index]
+        const blocoMontado = blocoPlano(plano)
 
-        const planoBloco: HTMLDivElement = document.createElement('div')    // tag DIV do bloco do plano atual
-        const planoInformacoes: HTMLSpanElement = document.createElement('span')    // tag SPAN que recebe o nome do plano e os beneficios
-        const listaBeneficios: HTMLUListElement = document.createElement('ul')  // tag UL onde são listados os beneficios de cada plano
-        const planoPreco: HTMLSpanElement = document.createElement('span')  // tag SPAN que recebe o valor do plano e onde é inserido o botão de Contratar
-
-        // Adicionando as classes Tailwind necessarias
-        planoBloco.classList.add('bloco-plano')
-        planoInformacoes.classList.add('flex-col')
-        planoPreco.classList.add('flex-col')
-        if (plano.promo) planoBloco.classList.add('plano-especial')     // classe de plano com estilo especial
-
-        // primeiro o nome do plano é inserido de forma simples com innerHTML
-        planoInformacoes.innerHTML = `<h3 class="mb-6">${plano.servico}</h3>`
-        // os beneficios são processados com um FOR que os insere na tag UL
-        for (let i = 0; i < 6; i++) {
-            listaBeneficios.innerHTML += 
-            `<li class="flex items-center mb-2">
-                <iconify-icon height="1rem" class="mr-3 text-roxo-500" icon="tabler:check"></iconify-icon>
-                <p class="m-0 text-xs">Wi-Fi de alta velocidade</p>
-            </li>`
-        }
-        
-        // o valor do plano e o botão são criados e inseridos de forma simples com o innerHTML
-        planoPreco.innerHTML =
-            `<span class="items-start mb-4">
-                <p class="m-0 text-neutral-600 text-xs leading-3">R$</p>
-                <p class="m-0 text-neutral-800 text-3xl leading-6 font-extrabold">${plano?.diaria || plano.mensal}</p>
-                <p class="m-0 text-neutral-600 text-xs leading-3">,00</p>
-                <p class="m-0 text-neutral-400 ml-1 text-sm">/dia</p>
-            </span>
-            <button class="btn btn-verde-2 w-full font-extrabold">Contratar</button>`
-            
-        // montagem do conteudo do bloco
-        planoInformacoes.appendChild(listaBeneficios)
-        planoBloco.appendChild(planoInformacoes)
-        planoBloco.appendChild(planoPreco) 
-
-        // o bloco, enfim montado, é inserido no container junto dos demais planos
-        planosContainer.appendChild(planoBloco)
+        // o bloco, após ser montado pela função blocoPlano, é inserido no container junto dos demais planos
+        planosContainer.appendChild(blocoMontado)
     }
 }
