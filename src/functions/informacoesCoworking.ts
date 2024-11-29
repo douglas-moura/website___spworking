@@ -13,10 +13,12 @@ export const servicos: Plano[] = [
         id: 2, servico: "Sala de Reunião", valor: 149, periodo: "dia", promo: false,
         beneficios: ["Rede Wi-fi", "Café, água e chá disponível", "Guarda volumes com chave", "SmartTV 52 polegadas"]
     },
+    /*
     {
         id: 3, servico: "Sala de Reunião", valor: 449, periodo: "semana", promo: false,
         beneficios: ["Rede Wi-fi", "Café, água e chá disponível", "4 almoços/dia no local", "Guarda volumes com chave", "SmartTV 52 polegadas"]
     },
+    */
     {
         id: 4, servico: "Sala 6 Lugares", valor: 1599, periodo: "mês", promo: false,
         beneficios: ["2 Rede Wi-fi", "Café, água e chá disponível", "6 almoços/dia no local", "Guarda volumes com chave", "Happy Hour", "Endereço fiscal", "Horário comercial extendido"]

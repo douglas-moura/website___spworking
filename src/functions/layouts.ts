@@ -93,21 +93,25 @@ export const blocoPlano = (plano: Plano): HTMLElement => {
     // os beneficios são processados com um FOR que os insere na tag UL
     for (let i = 0; i < plano.beneficios.length; i++) {
         listaBeneficios.innerHTML += 
-        `<li class="flex items-center mb-2">
-            <iconify-icon height="1rem" class="mr-3 text-roxo-500" icon="tabler:check"></iconify-icon>
-            <p class="m-0 text-xs">${plano.beneficios[i]}</p>
-        </li>`
+        `
+            <li class="flex items-center mb-2">
+                <iconify-icon height="1rem" class="mr-3 text-roxo-500" icon="tabler:check"></iconify-icon>
+                <p class="m-0 text-xs">${plano.beneficios[i]}</p>
+            </li>
+        `
     }
     
     // o valor do plano e o botão são criados e inseridos de forma simples com o innerHTML
     planoPreco.innerHTML =
-        `<span class="items-start mb-4">
-            <p class="m-0 text-neutral-600 text-xs leading-3">R$</p>
-            <p class="m-0 text-neutral-800 text-3xl leading-6 font-extrabold">${plano?.valor.toLocaleString('pt-BR') || ''}</p>
-            <p class="m-0 text-neutral-600 text-xs leading-3">,00</p>
-            <p class="m-0 text-neutral-400 ml-1 text-sm" id="periodo-plano">/${plano?.periodo || ''}</p>
-        </span>
-        <button class="btn btn-verde-2 w-full font-extrabold">Contratar</button>`
+        `
+            <span class="items-start mb-4">
+                <p class="m-0 text-neutral-600 text-xs leading-3">R$</p>
+                <p class="m-0 text-neutral-800 text-3xl leading-6 font-extrabold">${plano?.valor.toLocaleString('pt-BR') || ''}</p>
+                <p class="m-0 text-neutral-600 text-xs leading-3">,00</p>
+                <p class="m-0 text-neutral-400 ml-1 text-sm" id="periodo-plano">/${plano?.periodo || ''}</p>
+            </span>
+            <button class="btn btn-verde-2 w-full font-extrabold">Contratar</button>
+        `
         
     // montagem do conteudo do bloco
     planoInformacoes.appendChild(listaBeneficios)

@@ -119,24 +119,28 @@
         @apply shadow-lg min-h-52 cursor-pointer
     }
 
-    .card {
-        @apply flex-1 h-full transition-all duration-75 cursor-pointer bg-cover bg-center relative opacity-80 hover:opacity-100 border border-neutral-100
+    .pelicula {
+        @apply z-10 p-8 absolute w-full h-full top-0 left-0 bg-[#00000000] transition-all duration-150 group-hover:bg-gradient-to-b from-[#000000e1] from-40% to-[#0000001a]
     }
 
     .slide {
         @apply min-w-[400px] max-w-[440px] relative m-[20px] border border-roxo-800
     }
 
-    .pelicula {
-        @apply z-10 p-8 absolute w-full h-full top-0 left-0 bg-[#00000000] transition-all duration-150 group-hover:bg-gradient-to-b from-[#000000e1] from-40% to-[#0000001a]
+    .card {
+        @apply flex-1 h-full transition-all duration-75 cursor-pointer bg-cover bg-center relative opacity-80 hover:opacity-100 border border-neutral-100
+    }
+
+    .text-card {
+        @apply break-words w-full flex-col opacity-0 transition-all duration-150 delay-200
     }
 
     .bloco-plano {
-        @apply rounded-lg shadow-lg bg-white p-6 min-w-[300px] min-h-[50dvh] mx-3 flex flex-col justify-between snap-center border-0 border-white relative
+        @apply rounded-lg shadow-lg bg-white p-6 min-w-[250px] min-h-[50dvh] mx-3 flex flex-col justify-between snap-center border-0 border-white relative
     }
 
     .plano-especial {
-        @apply border-roxo-500 bg-gradient-to-b from-roxo-800 to-roxo-500 scale-105
+        @apply border-4 border-roxo-500 bg-gradient-to-b from-roxo-800 to-roxo-500 scale-110
     }
 
     .plano-especial h3 {
@@ -157,26 +161,6 @@
 
     .plano-especial button {
         @apply btn-roxo-2 border-2 border-roxo-100
-    }
-
-    .tab-titulo {
-        @apply px-6 py-3 text-xs bg-verde-300 text-neutral-800 first-of-type:rounded-ss-md last-of-type:rounded-tr-md
-    }
-
-    .text-card {
-        @apply break-words w-full flex-col opacity-0 transition-all duration-150 delay-200
-    }
-
-    .tab-precos td {
-        @apply text-sm text-neutral-600 py-8 px-6
-    }
-
-    .tab-linha {
-        @apply odd:bg-white even:bg-neutral-50
-    }
-
-    .cel-valores span {
-        @apply justify-between flex-row text-xs
     }
 }
 

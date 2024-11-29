@@ -61,4 +61,6 @@ if (window.location.pathname == '/pages/planos.html') {
             </details>`
         blocoFAQ.innerHTML += novaPergunta
     }
+
+    
 }
