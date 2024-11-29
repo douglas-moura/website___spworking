@@ -2,7 +2,8 @@ import './assets/css/style.css'
 import { menu, rodapeInfos, rodapeFinal, blocoPlano } from './functions/layouts'
 import { abrirImagem } from './functions/imagemFunctions'
 import { slide } from './functions/sliderShow'
-import { Plano } from './functions/interfaces'
+import { Plano, QuestaoFreq } from './functions/interfaces'
+import { servicos, perguntasFrequentes } from './functions/informacoesCoworking'
 
 console.log(window.location.pathname);
 
@@ -40,14 +41,8 @@ if (window.location.pathname == '/') {
 
 // FUNCIONALIDADES DA PÁGINA PLANOS
 if (window.location.pathname == '/pages/planos.html') {
-    const servicos = [
-        { id: 0, servico: "Mesa Individual", diaria: 49, mensal: 490, anual: 5880, promo: null },
-        { id: 1, servico: "Sala de Reunião", diaria: 249, mensal: null, anual: null, promo: true },
-        { id: 2, servico: "Sala 6 Lugares", diaria: null, mensal: 1599, anual: 19188, promo: null },
-        { id: 3, servico: "Sala 12 Lugares", diaria: null, mensal: 3199, anual: 38388, promo: null }
-    ]
-
     const planosContainer = document.getElementById('planos-container') as HTMLDivElement
+    const blocoFAQ = document.getElementById('faq-bloco') as HTMLDivElement
 
     for (let index = 0; index < servicos.length; index++) {
         const plano: Plano = servicos[index]
@@ -55,5 +50,15 @@ if (window.location.pathname == '/pages/planos.html') {
 
         // o bloco, após ser montado pela função blocoPlano, é inserido no container junto dos demais planos
         planosContainer.appendChild(blocoMontado)
+    }
+
+    for (let index = 0; index < perguntasFrequentes.length; index++) {
+        const question: QuestaoFreq = perguntasFrequentes[index]
+        const novaPergunta =
+            `<details class="border-b border-neutral-200 pb-4 m-0">
+                <summary class="cursor-pointer text-neutral-600 font-semibold">${question.pergunta}</summary>
+                <p class="pt-2 text-sm">${question.resposta}</p>
+            </details>`
+        blocoFAQ.innerHTML += novaPergunta
     }
 }

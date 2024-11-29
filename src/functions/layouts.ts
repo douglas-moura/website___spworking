@@ -75,7 +75,7 @@ export const rodapeFinal = (): HTMLElement => {
 }
 
 export const blocoPlano = (plano: Plano): HTMLElement => {
-    console.log(typeof plano);
+
     const planoBloco: HTMLDivElement = document.createElement('div')    // tag DIV do bloco do plano atual
     const planoInformacoes: HTMLSpanElement = document.createElement('span')    // tag SPAN que recebe o nome do plano e os beneficios
     const listaBeneficios: HTMLUListElement = document.createElement('ul')  // tag UL onde são listados os beneficios de cada plano
@@ -85,16 +85,17 @@ export const blocoPlano = (plano: Plano): HTMLElement => {
     planoBloco.classList.add('bloco-plano')
     planoInformacoes.classList.add('flex-col')
     planoPreco.classList.add('flex-col')
+    planoPreco.classList.add('sessao-preco')
     if (plano.promo) planoBloco.classList.add('plano-especial')     // classe de plano com estilo especial
 
     // primeiro o nome do plano é inserido de forma simples com innerHTML
     planoInformacoes.innerHTML = `<h3 class="mb-6">${plano.servico}</h3>`
     // os beneficios são processados com um FOR que os insere na tag UL
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < plano.beneficios.length; i++) {
         listaBeneficios.innerHTML += 
         `<li class="flex items-center mb-2">
             <iconify-icon height="1rem" class="mr-3 text-roxo-500" icon="tabler:check"></iconify-icon>
-            <p class="m-0 text-xs">Wi-Fi de alta velocidade</p>
+            <p class="m-0 text-xs">${plano.beneficios[i]}</p>
         </li>`
     }
     
@@ -102,9 +103,9 @@ export const blocoPlano = (plano: Plano): HTMLElement => {
     planoPreco.innerHTML =
         `<span class="items-start mb-4">
             <p class="m-0 text-neutral-600 text-xs leading-3">R$</p>
-            <p class="m-0 text-neutral-800 text-3xl leading-6 font-extrabold">${plano?.diaria || plano.mensal}</p>
+            <p class="m-0 text-neutral-800 text-3xl leading-6 font-extrabold">${plano?.valor.toLocaleString('pt-BR') || ''}</p>
             <p class="m-0 text-neutral-600 text-xs leading-3">,00</p>
-            <p class="m-0 text-neutral-400 ml-1 text-sm">/dia</p>
+            <p class="m-0 text-neutral-400 ml-1 text-sm" id="periodo-plano">/${plano?.periodo || ''}</p>
         </span>
         <button class="btn btn-verde-2 w-full font-extrabold">Contratar</button>`
         

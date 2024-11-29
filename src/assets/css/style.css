@@ -57,8 +57,12 @@
         @apply object-cover
     }
 
-    p {
+    p, label {
         @apply text-neutral-400 text-base mb-4
+    }
+
+    label {
+        @apply m-0 text-sm
     }
 
     a {
@@ -128,11 +132,11 @@
     }
 
     .bloco-plano {
-        @apply rounded-lg shadow bg-white p-6 min-w-[250px] min-h-[50dvh] mx-3 flex flex-col justify-between snap-center border border-white relative
+        @apply rounded-lg shadow-lg bg-white p-6 min-w-[300px] min-h-[50dvh] mx-3 flex flex-col justify-between snap-center border-0 border-white relative
     }
 
     .plano-especial {
-        @apply border-roxo-500 bg-gradient-to-b from-roxo-800 to-roxo-500
+        @apply border-roxo-500 bg-gradient-to-b from-roxo-800 to-roxo-500 scale-105
     }
 
     .plano-especial h3 {

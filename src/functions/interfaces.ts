@@ -1,8 +1,13 @@
 export interface Plano {
     id: number,
     servico: string,
-    diaria: null | number,
-    mensal: null | number,
-    anual: null | number,
-    promo: null | boolean
+    valor:  number,
+    periodo: string,
+    promo: boolean,
+    beneficios: string[]
+}
+
+export interface QuestaoFreq {
+    pergunta: string,
+    resposta: string,
 }
