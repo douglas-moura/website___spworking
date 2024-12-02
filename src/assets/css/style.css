@@ -80,7 +80,7 @@
     }
 
     .btn {
-        @apply rounded bg-neutral-300 text-white py-3 px-4 text-sm transition-all
+        @apply rounded bg-neutral-300 text-white py-3 px-4 text-sm transition-all font-extrabold
     }
 
     .btn-verde {
