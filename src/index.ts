@@ -1,7 +1,7 @@
 import './assets/css/style.css'
 import { menu, rodapeInfos, rodapeFinal, blocoPlano } from './functions/layouts'
-import { abrirImagem } from './functions/imagemFunctions'
-import { slide } from './functions/sliderShow'
+import { abrirImagem } from './functions/functionsImagens'
+import { slide } from './functions/functionsSlidershow'
 import { Plano, QuestaoFreq } from './functions/interfaces'
 import { servicos, perguntasFrequentes } from './functions/informacoesCoworking'
 
