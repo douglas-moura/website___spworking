@@ -1,9 +1,9 @@
 import './assets/css/style.css'
-import { menu, rodapeInfos, rodapeFinal, blocoPlano } from './functions/layouts'
+import { menu, rodapeInfos, rodapeFinal, blocoPlano, boxServico } from './functions/layouts'
 import { abrirImagem } from './functions/functionsImagens'
-import { slide } from './functions/functionsSlidershow'
 import { Plano, QuestaoFreq } from './functions/interfaces'
-import { servicos, perguntasFrequentes } from './functions/informacoesCoworking'
+import { planos, servicos, perguntasFrequentes } from './functions/informacoesCoworking'
+import { slide } from './functions/functionsSlidershow'
 
 console.log(window.location.pathname);
 
@@ -22,8 +22,14 @@ window.addEventListener('DOMContentLoaded', () => {
     footerPagina.appendChild(rodapFimContent)
 })
 
+
 // FUNCIONALIDADES DA HOME
 if (window.location.pathname == '/') {
+    const blocoServicos = document.getElementById('box-servicos') as HTMLDivElement
+    for (let index = 0; index < servicos.length; index++) {
+        const element = boxServico(servicos[index])
+        blocoServicos.appendChild(element)
+    }
 
     // SLIDESHOW TESTEMUNHAL CLIENTES
     const btnPrev = document.getElementById('prev') as HTMLElement
@@ -39,13 +45,14 @@ if (window.location.pathname == '/') {
     }
 }
 
+
 // FUNCIONALIDADES DA PÁGINA PLANOS
 if (window.location.pathname == '/pages/planos.html') {
     const planosContainer = document.getElementById('planos-container') as HTMLDivElement
     const blocoFAQ = document.getElementById('faq-bloco') as HTMLDivElement
 
-    for (let index = 0; index < servicos.length; index++) {
-        const plano: Plano = servicos[index]
+    for (let index = 0; index < planos.length; index++) {
+        const plano: Plano = planos[index]
         const blocoMontado = blocoPlano(plano)
 
         // o bloco, após ser montado pela função blocoPlano, é inserido no container junto dos demais planos
@@ -61,6 +68,4 @@ if (window.location.pathname == '/pages/planos.html') {
             </details>`
         blocoFAQ.innerHTML += novaPergunta
     }
-
-    
 }

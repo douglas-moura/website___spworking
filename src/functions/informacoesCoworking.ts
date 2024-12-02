@@ -1,6 +1,6 @@
-import { Plano, QuestaoFreq } from "./interfaces"
+import { Plano, QuestaoFreq, Servico } from "./interfaces"
 
-export const servicos: Plano[] = [
+export const planos: Plano[] = [
     {
         id: 0, servico: "Mesa Individual", valor: 49, periodo: "dia", promo: false,
         beneficios: ["Rede Wi-fi", "Café, água e chá disponível"]
@@ -27,6 +27,16 @@ export const servicos: Plano[] = [
         id: 5, servico: "Sala 12 Lugares", valor: 3199, periodo: "mês", promo: false,
         beneficios: ["2 Rede Wi-fi", "Café, água e chá disponível", "12 almoços/dia no local", "Guarda volumes com chave", "Happy Hour", "Endereço fiscal", "Horário comercial extendido"]
     }
+]
+
+export const servicos: Servico[] = [
+    { icon: "tabler:wifi", descr: "Redes Wi-Fi" },
+    { icon: "tabler:packages", descr: "Armários" },
+    { icon: "tabler:glass-cocktail", descr: "Happy Hour" },
+    { icon: "tabler:tools-kitchen-2", descr: "Copa" },
+    { icon: "tabler:hand-sanitizer", descr: "Faxina" },
+    { icon: "tabler:file-text", descr: "Impressoras" },
+    { icon: "tabler:brand-wechat", descr: "Networks" }
 ]
 
 export const perguntasFrequentes: QuestaoFreq[] = [

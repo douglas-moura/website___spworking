@@ -1,4 +1,4 @@
-import { Plano } from "./interfaces"
+import { Plano, Servico } from "./interfaces"
 
 const logoSrc = '../img/5b43d2e7a72e4336b5bb.png'
 
@@ -75,7 +75,6 @@ export const rodapeFinal = (): HTMLElement => {
 }
 
 export const blocoPlano = (plano: Plano): HTMLElement => {
-
     const planoBloco: HTMLDivElement = document.createElement('div')    // tag DIV do bloco do plano atual
     const planoInformacoes: HTMLSpanElement = document.createElement('span')    // tag SPAN que recebe o nome do plano e os beneficios
     const listaBeneficios: HTMLUListElement = document.createElement('ul')  // tag UL onde são listados os beneficios de cada plano
@@ -119,4 +118,21 @@ export const blocoPlano = (plano: Plano): HTMLElement => {
     planoBloco.appendChild(planoPreco)
 
     return planoBloco
+}
+
+export const boxServico = (servico: Servico): HTMLSpanElement => {
+    const bloco = document.createElement('span')
+    bloco.classList.add('bloco-servico')
+
+    const icone = document.createElement('iconify-icon')
+    icone.setAttribute('icon', servico.icon)
+    icone.setAttribute('height', '2.5rem')
+
+    const texto = document.createElement('p')
+    texto.innerText = servico.descr
+
+    bloco.appendChild(icone)
+    bloco.appendChild(texto)
+
+    return bloco
 }

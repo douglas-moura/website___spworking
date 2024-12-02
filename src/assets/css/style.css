@@ -103,16 +103,28 @@
         @apply bg-[#25D366] hover:bg-[#178b42]
     }
 
-    .bloco-servico {
+    .bloco-tipos-espacos {
         @apply rounded shadow-lg overflow-hidden
     }
 
-    .bloco-servico span {
+    .bloco-tipos-espacos span {
         @apply p-4 bg-white relative h-full
     }
 
-    .bloco-servico h4 {
+    .bloco-tipos-espacos h4 {
         @apply bg-roxo-500 text-white absolute -top-6 left-4 h-12 w-4/6 flex flex-col justify-center p-4
+    }
+
+    .bloco-servico {
+        @apply aspect-square flex-col bg-white shadow-xl rounded justify-center
+    }
+
+    .bloco-servico iconify-icon {
+        @apply mx-auto mb-2 text-neutral-800
+    }
+
+    .bloco-servico p {
+        @apply mx-auto my-0 text-xs
     }
 
     .bloco-galeria {

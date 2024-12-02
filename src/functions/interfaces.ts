@@ -11,3 +11,8 @@ export interface QuestaoFreq {
     pergunta: string,
     resposta: string,
 }
+
+export interface Servico {
+    icon: string,
+    descr: string,
+}
