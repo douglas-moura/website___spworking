@@ -178,7 +178,7 @@
 
 @layer utilities {
     * {
-        border: 0px solid red;
+        border: 1px solid red;
     }
 
     .card:hover {

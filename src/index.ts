@@ -14,12 +14,21 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const menuContent: HTMLElement = menu()
     headerPagina.appendChild(menuContent)
-
+    
     const rodapeInfosContent: HTMLElement = rodapeInfos()
     footerPagina.appendChild(rodapeInfosContent)
-
+    
     const rodapFimContent: HTMLElement = rodapeFinal()
-    footerPagina.appendChild(rodapFimContent)
+    footerPagina.appendChild(rodapFimContent)  
+
+    // ABRIR/FECHAR MENU MOBILE
+    const abrirMenu = document.getElementById('abrir-menu-mobile') as HTMLElement
+    const fecharMenu = document.getElementById('fechar-menu-mobile') as HTMLElement
+    const menuLateral = () => {
+        (document.getElementById('mobile-menu-lista') as HTMLUListElement).classList.toggle('-translate-x-full')
+    }
+    abrirMenu.addEventListener('click', () => menuLateral())
+    fecharMenu.addEventListener('click', () => menuLateral())
 })
 
 

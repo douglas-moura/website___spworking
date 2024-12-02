@@ -13,13 +13,14 @@ export const menu = (): HTMLElement => {
 
                 <!-- menu mobile -->
                 <span class="justify-end lg:hidden">
-                    <iconify-icon icon="tabler:menu" height="1rem" class="text-neutral-200 p-2"></iconify-icon>
-                    <ul class="absolute top-0 left-0 bg-white h-dvh text-neutral-800 p-8 w-5/6 hidden">
-                        <li class=""><a href="/#banner">Home</a></li>
-                        <li class=""><a href="/#servicos">Serviços</a></li>
-                        <li class=""><a href="/#galeria">Galeria</a></li>
-                        <li class=""><a href="/#localizacao">Localização</a></li>
-                        <li class=""><a href="pages/planos.html">Planos</a></li>
+                    <iconify-icon icon="tabler:menu-2" height="1rem" class="text-neutral-200 p-2" id="abrir-menu-mobile"></iconify-icon>
+                    <ul id="mobile-menu-lista" class="absolute top-0 left-0 bg-white h-dvh text-neutral-800 p-8 w-full -translate-x-full transition-all">
+                        <iconify-icon icon="tabler:x" height="2rem" class="mb-8 w-full text-verde-700" id="fechar-menu-mobile"></iconify-icon>
+                        <li class="mb-6"><a href="/#banner">Home</a></li>
+                        <li class="mb-6"><a href="/#servicos">Serviços</a></li>
+                        <li class="mb-6"><a href="/#galeria">Galeria</a></li>
+                        <li class="mb-6"><a href="/#localizacao">Localização</a></li>
+                        <li class="mb-6"><a href="pages/planos.html">Planos</a></li>
                         <li class="">
                             <span class="text-sm items-center">
                                 <iconify-icon icon="tabler:brand-whatsapp" height="1rem" class="mr-2 bg-[#25D366] rounded-full p-2"></iconify-icon>
