@@ -14,10 +14,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const menuContent: HTMLElement = menu()
     headerPagina.appendChild(menuContent)
-    
+
     const rodapeInfosContent: HTMLElement = rodapeInfos()
     footerPagina.appendChild(rodapeInfosContent)
-    
+
     const rodapFimContent: HTMLElement = rodapeFinal()
     footerPagina.appendChild(rodapFimContent)  
 

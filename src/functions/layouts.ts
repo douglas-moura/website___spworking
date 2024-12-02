@@ -55,11 +55,11 @@ export const rodapeInfos = (): HTMLElement => {
 
     sessao.innerHTML += 
         `
-            <div class="container px-28 text-center mb-8">
-                <img src="${logoSrc}" alt="" class="mx-auto w-2/6">
+            <div class="container text-center mb-8 lg:px-28">
+                <img src="${logoSrc}" alt="" class="mx-auto w-5/6 lg:w-2/6">
                 <h2 class="text-neutral-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem tenetur quaerat eum illo temporibus</h2>
             </div>
-            <div class="container grid-cols-4 w-1/4">
+            <div class="container grid-cols-4 w-3/4 lg:w-1/4">
                 <a href="https://www.linkedin.com/company/spworkingcoworking/" target="_blank">
                     <iconify-icon icon="tabler:brand-linkedin" height="1.5rem" class="m-auto border-2 border-verde-500 text-verde-500 p-2 rounded-full cursor-pointer"></iconify-icon>
                 </a>
@@ -86,8 +86,8 @@ export const rodapeFinal = (): HTMLElement => {
     sessao.innerHTML += 
         `
             <div class="container">
-                <span class="justify-between">
-                    <h5 class="text-neutral-200">SPWorking Butantã - 2024 | Todos os direitos reservados</h5>
+                <span class="justify-between flex-col lg:flex-row">
+                    <h5 class="text-neutral-200" class="mb-4 lg:m-0">SPWorking Butantã - 2024 | Todos os direitos reservados</h5>
                     <h5 class="text-neutral-200">criador por <a href="https://github.com/douglas-moura" target="_blank" class="text-roxo-100">Douglas Moura</a></h5>
                 </span>
             </div>
