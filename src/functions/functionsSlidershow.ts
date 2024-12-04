@@ -1,7 +1,7 @@
 export const slide = (n: number): void => {
     const slider = document.getElementById('slider') as HTMLSpanElement
-    const slides = document.getElementsByClassName("slide") as HTMLCollection
-    const marginBase: number = 440
+    const slides = document.getElementsByClassName("slide") as HTMLCollection    
+    const marginBase: number = slides[0].getBoundingClientRect().width
     const maxxMargin: number = (slides.length - 1) * marginBase
     const marginLeftAtual: number = parseInt(slider.style.marginLeft.slice(0, -2))
     const marginRightAtual: number = parseInt(slider.style.marginRight.slice(0, -2))
