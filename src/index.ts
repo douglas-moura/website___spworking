@@ -1,9 +1,9 @@
 import './assets/css/style.css'
 import { menu, rodapeInfos, rodapeFinal, blocoPlano, boxServico } from './functions/layouts'
-import { abrirImagem } from './functions/functionsImagens'
+import { abrirImagem } from './functions/helpers'
 import { Plano, QuestaoFreq } from './functions/interfaces'
-import { planos, servicos, perguntasFrequentes } from './functions/informacoesCoworking'
-import { slide } from './functions/functionsSlidershow'
+import { planos, servicos, perguntasFrequentes } from './functions/infos'
+import { slide } from './functions/helpers'
 
 console.log(window.location.pathname);
 
