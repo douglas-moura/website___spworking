@@ -13,26 +13,26 @@ O site foi projetado para atender às seguintes necessidades:
 ### Estrutura do Projeto
 
 - **Páginas principais**: 
-  - Home: Introdução ao SPWorking e seus serviços.
-  - Planos: Informações detalhadas sobre os planos oferecidos.
-  - Contato: Formulário de contato e endereço.
+  - **Home:** Introdução ao SPWorking e seus serviços.
+  - **Planos:** Informações detalhadas sobre os planos oferecidos.
+  - **Contato:** Formulário de contato e endereço.
     
 - **Organização do Código**:
-  - /src                  # Diretório principal do código-fonte.
-       /assets            # Recursos estáticos como imagens, ícones, e arquivos de estilo.
-          /css            # Contém o arquivo principal de estilização `style.css`.
-          /img            # Imagens utilizadas no site.
-       /functions         # Código TypeScript com funcionalidades específicas para o projeto.
-       /pages             # Arquivos HTML adicionais, como `planos.html`, utilizados para estruturar outras páginas do site.  
-       /index.ts          # Arquivo principal de lógica em TypeScript para interatividade e funcionalidades dinâmicas.
-       /index.html        # Arquivo principal HTml e página inicial do site.
-  - /dist                 # Diretório de saída gerado pelo Webpack para distribuição.
-       /img               # Contém imagens otimizadas e renomeadas.
-       /pages             # Páginas HTML otimizadas.
-  - /node_modules         # Dependências gerenciadas pelo npm.
-  - tailwind.config.js    # Configuração personalizada do Tailwind CSS.
-  - webpack.config.js     # Configuração do Webpack para empacotamento do projeto.
-  - package.json          # Arquivo que gerencia as dependências, scripts e metadados do projeto.  
+  - **/src**                  # Diretório principal do código-fonte.
+       **/assets**            # Recursos estáticos como imagens, ícones, e arquivos de estilo.
+          **/css**            # Contém o arquivo principal de estilização `style.css`.
+          **/img**            # Imagens utilizadas no site.
+       **/functions**         # Código TypeScript com funcionalidades específicas para o projeto.
+       **/pages**             # Arquivos HTML adicionais, como `planos.html`, utilizados para estruturar outras páginas do site.  
+       **/index.ts**          # Arquivo principal de lógica em TypeScript para interatividade e funcionalidades dinâmicas.
+       **/index.html**        # Arquivo principal HTml e página inicial do site.
+  - **/dist**                 # Diretório de saída gerado pelo Webpack para distribuição.
+       **/img**               # Contém imagens otimizadas e renomeadas.
+       **/pages**             # Páginas HTML otimizadas.
+  - **/node_modules**         # Dependências gerenciadas pelo npm.
+  - **tailwind.config.js**    # Configuração personalizada do Tailwind CSS.
+  - **webpack.config.js**     # Configuração do Webpack para empacotamento do projeto.
+  - **package.json**          # Arquivo que gerencia as dependências, scripts e metadados do projeto.  
 
 ## Tecnologias Utilizadas
 
