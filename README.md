@@ -20,8 +20,8 @@ O site foi projetado para atender às seguintes necessidades:
 - **Organização do Código**:
   - **/src**                  # Diretório principal do código-fonte.                                                                    
     - **/assets**             # Recursos estáticos como imagens, ícones, e arquivos de estilo.                                          
-          **/css**            # Contém o arquivo principal de estilização `style.css`.                                                     
-          **/img**            # Imagens utilizadas no site.                                                                             
+      - **/css**            # Contém o arquivo principal de estilização `style.css`.                                                     
+      - **/img**            # Imagens utilizadas no site.                                                                             
        **/functions**         # Código TypeScript com funcionalidades específicas para o projeto.                                       
        **/pages**             # Arquivos HTML adicionais, como `planos.html`, utilizados para estruturar outras páginas do site.        
        **/index.ts**          # Arquivo principal de lógica em TypeScript para interatividade e funcionalidades dinâmicas.              
