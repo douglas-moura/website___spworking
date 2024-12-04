@@ -32,13 +32,13 @@ export const menu = (): HTMLElement => {
 
                 <!-- menu desktop -->
                 <ul class="items-center h-full justify-between text-white col-span-2 hidden lg:inline-flex">
-                    <li class="text-sm xl:text-base"><a href="/#banner">Home</a></li>
-                    <li class="text-sm xl:text-base"><a href="/#servicos">Serviços</a></li>
-                    <li class="text-sm xl:text-base"><a href="/#galeria">Galeria</a></li>
-                    <li class="text-sm xl:text-base"><a href="/#localizacao">Localização</a></li>
-                    <li class="text-sm xl:text-base"><a href="pages/planos.html">Planos</a></li>
-                    <li class="text-sm xl:text-base">
-                        <span class="ml-4 text-sm xl:text-base items-center">
+                    <li class="text-sm xl:text-base 2xl:text-sm"><a href="/#banner">Home</a></li>
+                    <li class="text-sm xl:text-base 2xl:text-sm"><a href="/#servicos">Serviços</a></li>
+                    <li class="text-sm xl:text-base 2xl:text-sm"><a href="/#galeria">Galeria</a></li>
+                    <li class="text-sm xl:text-base 2xl:text-sm"><a href="/#localizacao">Localização</a></li>
+                    <li class="text-sm xl:text-base 2xl:text-sm"><a href="pages/planos.html">Planos</a></li>
+                    <li class="text-sm xl:text-base 2xl:text-sm">
+                        <span class="ml-4 items-center text-sm xl:text-base 2xl:text-sm">
                             <iconify-icon icon="tabler:brand-whatsapp" height="1rem" class="mr-2 bg-[#25D366] rounded-full p-2"></iconify-icon>
                             11 98765-4321
                         </span>

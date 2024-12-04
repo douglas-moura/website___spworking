@@ -84,7 +84,7 @@ xl      1280px      @media (min-width: 1280px) { ... }
 
 @layer components {
     .container {
-        @apply grid gap-8 mx-auto w-5/6 lg:w-10/12 xl:w-8/12
+        @apply grid gap-8 mx-auto w-5/6 lg:w-10/12 xl:w-8/12 2xl:w-6/12
     }
 
     .btn {
