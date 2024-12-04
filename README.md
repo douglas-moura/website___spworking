@@ -21,7 +21,7 @@ O site foi projetado para atender às seguintes necessidades:
   | Tecnologia               | Descrição 
   |--------------------------|-------------------------------------------------------------------------------------------------------------|
   |- **/src**                |   # Diretório principal do código-fonte.                                                                    |
-  |     **/assets**          |  # Recursos estáticos como imagens, ícones, e arquivos de estilo.                                           |
+  |--**/assets**          |  # Recursos estáticos como imagens, ícones, e arquivos de estilo.                                           |
   |        **/css**          |  # Contém o arquivo principal de estilização `style.css`.                                                   |   
   |        **/img**          |  # Imagens utilizadas no site.                                                                              |
   |     **/functions**       |  # Código TypeScript com funcionalidades específicas para o projeto.                                        |
