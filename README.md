@@ -18,7 +18,7 @@ O site foi projetado para atender às seguintes necessidades:
   - **Contato:** Formulário de contato e endereço.
     
 - **Organização do Código**:
-  - **/src**                - Diretório principal do código-fonte.                                                                    
+  - **/src**                #### Diretório principal do código-fonte.                                                                    
     - **/assets**           - Recursos estáticos como imagens, ícones, e arquivos de estilo.                                          
       - **/css**            - Contém o arquivo principal de estilização `style.css`.                                                     
       - **/img**            - Imagens utilizadas no site.
