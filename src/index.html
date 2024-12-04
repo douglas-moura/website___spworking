@@ -12,7 +12,7 @@
         <main>
             <section id="banner" class="min-h-96 items-center pt-40 pb-20 mt-0 bg-escritorio-banner bg-center bg-cover">
                 <div class="container lg:grid-cols-2">
-                    <div class="bg-[#ffffffd5] p-12 rounded mt-8 backdrop-blur-sm lg:aspect-square">
+                    <div class="bg-[#ffffffd5] rounded mt-8 backdrop-blur-sm p-6 lg:aspect-square lg:p-12">
                         <div class="flex flex-col justify-between h-full">
                             <div>
                                 <h1 class="text-neutral-800">Networking, Produtividade e Conforto</h1>
@@ -29,7 +29,7 @@
             <section id="sobre">
                 <div class="container lg:grid-cols-5">
                     <div class="col-span-3 flex items-center relative">
-                        <div class="z-20 absolute h-[90%] w-[2px] bg-verde-500 ml-8 lg:ml-12"></div>
+                        <div class="z-20 absolute h-[80%] w-[2px] bg-verde-500 ml-8 lg:ml-12 lg:h-[90%]"></div>
                         <ul class="z-30 grid gap-8 lg:gap-12 lg:w-5/6">
                             <li class="flex items-center">
                                 <span class="flex mr-4 bg-verde-500 rounded-full">
@@ -144,59 +144,59 @@
             <section id="comentarios" class="bg-verde-300">
                 <h1 id="tilt" class="container text-roxo-800 text-center mb-12">Nossos Clientes Comprovam</h1>
                 <div class="container relative min-h-72">
-                    <iconify-icon height="3rem" class="text-roxo-800 select-none absolute z-20 cursor-pointer top-40 -left-8 lg:-left-20 lg:top-20" id="prev" icon="tabler:chevron-left"></iconify-icon>
+                    <iconify-icon height="3rem" class="text-roxo-800 scale-75 select-none absolute z-20 cursor-pointer top-40 -left-4 lg:-left-20 lg:top-20 lg:scale-100" id="prev" icon="tabler:chevron-left"></iconify-icon>
                     <div class="select-none absolute z-10 cursor-default h-full bg-gradient-to-r from-verde-300 from-50% to-[#00000001] left-0 w-8 lg:-left-10 lg:w-20"></div>
-                    <iconify-icon height="3rem" class="text-roxo-800 select-none absolute z-20 cursor-pointer top-40 -right-8 lg:-right-20 lg:top-20" id="next" icon="tabler:chevron-right"></iconify-icon>
+                    <iconify-icon height="3rem" class="text-roxo-800 scale-75 select-none absolute z-20 cursor-pointer top-40 -right-4 lg:-right-20 lg:top-20 lg:scale-100" id="next" icon="tabler:chevron-right"></iconify-icon>
                     <div class="select-none absolute z-10 cursor-default h-full bg-gradient-to-r from-[#00000001] to-verde-300 to-50% right-0 w-8 lg:-right-10 lg:w-20"></div>
                     <div class="w-full flex overflow-hidden">
-                        <span id="slider" class="transition-all h-full px-10" style="margin-left: 0px; margin-right: 0px;">
+                        <span id="slider" class="transition-all h-full px-4 lg:px-12" style="margin-left: 0px; margin-right: 0px;">
                             <div class="slide">
-                                <picture class="aspect-square shadow-xl w-32 absolute -top-[20px] -left-[20px]">
+                                <picture class="aspect-square shadow-xl absolute w-24 -top-[10px] -left-[10px] lg:-top-[20px] lg:-left-[20px] lg:w-32">
                                     <img src="./assets/img/cliente-01.jpg" alt="">
                                 </picture>
-                                <span class="p-8 flex-col mt-28 lg:ml-28 lg:mt-0">
-                                    <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
-                                    <h3 class="text-roxo-800 m-0">Aline Damasceno</h3>
+                                <span class="flex-col mt-24 p-4 lg:ml-28 lg:mt-0 lg:p-8">
+                                    <p class="text-neutral-800 text-xs break-all italic lg:text-sm">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
+                                    <h3 class="text-roxo-800 m-0 text-sm lg:text-xl">Aline Damasceno</h3>
                                     <h5 class="text-neutral-800">Advogada</h5>
                                 </span>
                             </div>
                             <div class="slide">
-                                <picture class="aspect-square shadow-xl w-32 absolute -top-[20px] -left-[20px]">
+                                <picture class="aspect-square shadow-xl absolute w-24 -top-[10px] -left-[10px] lg:-top-[20px] lg:-left-[20px] lg:w-32">
                                     <img src="./assets/img/cliente-02.jpg" alt="">
                                 </picture>
-                                <span class="p-8 flex-col mt-28 lg:ml-28 lg:mt-0">
-                                    <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
-                                    <h3 class="text-roxo-800 m-0">Luciano Pereira</h3>
+                                <span class="flex-col mt-24 p-4 lg:ml-28 lg:mt-0 lg:p-8">
+                                    <p class="text-neutral-800 text-xs break-all italic lg:text-sm">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
+                                    <h3 class="text-roxo-800 m-0 text-sm lg:text-xl">Luciano Pereira</h3>
                                     <h5 class="text-neutral-800">TEX Inovações</h5>
                                 </span>
                             </div>
                             <div class="slide">
-                                <picture class="aspect-square shadow-xl w-32 absolute -top-[20px] -left-[20px]">
+                                <picture class="aspect-square shadow-xl absolute w-24 -top-[10px] -left-[10px] lg:-top-[20px] lg:-left-[20px] lg:w-32">
                                     <img src="./assets/img/cliente-03.jpg" alt="">
                                 </picture>
-                                <span class="p-8 flex-col mt-28 lg:ml-28 lg:mt-0">
-                                    <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
-                                    <h3 class="text-roxo-800 m-0">Fabiana Oliveira</h3>
+                                <span class="flex-col mt-24 p-4 lg:ml-28 lg:mt-0 lg:p-8">
+                                    <p class="text-neutral-800 text-xs break-all italic lg:text-sm">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
+                                    <h3 class="text-roxo-800 m-0 text-sm lg:text-xl">Fabiana Oliveira</h3>
                                     <h5 class="text-neutral-800">FT-Austin</h5>
                                 </span>
                             </div>
                             <div class="slide">
-                                <picture class="aspect-square shadow-xl w-32 absolute -top-[20px] -left-[20px]">
+                                <picture class="aspect-square shadow-xl absolute w-24 -top-[10px] -left-[10px] lg:-top-[20px] lg:-left-[20px] lg:w-32">
                                     <img src="./assets/img/cliente-04.jpg" alt="">
                                 </picture>
-                                <span class="p-8 flex-col mt-28 lg:ml-28 lg:mt-0">
-                                    <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
-                                    <h3 class="text-roxo-800 m-0">Luiz Teodoro</h3>
+                                <span class="flex-col mt-24 p-4 lg:ml-28 lg:mt-0 lg:p-8">
+                                    <p class="text-neutral-800 text-xs break-all italic lg:text-sm">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
+                                    <h3 class="text-roxo-800 m-0 text-sm lg:text-xl">Luiz Teodoro</h3>
                                     <h5 class="text-neutral-800">Praticasting Inc.</h5>
                                 </span>
                             </div>
                             <div class="slide">
-                                <picture class="aspect-square shadow-xl w-32 absolute -top-[20px] -left-[20px]">
+                                <picture class="aspect-square shadow-xl absolute w-24 -top-[10px] -left-[10px] lg:-top-[20px] lg:-left-[20px] lg:w-32">
                                     <img src="./assets/img/cliente-05.jpg" alt="">
                                 </picture>
-                                <span class="p-8 flex-col mt-28 lg:ml-28 lg:mt-0">
-                                    <p class="text-neutral-800 text-sm break-all italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
-                                    <h3 class="text-roxo-800 m-0">Fabio Andrade Jr.</h3>
+                                <span class="flex-col mt-24 p-4 lg:ml-28 lg:mt-0 lg:p-8">
+                                    <p class="text-neutral-800 text-xs break-all italic lg:text-sm">"Lorem ipsum dolor sit amet consectetur adipisicing elit. At commodi perspiciatis, mollitia unde accusantium, reiciendis repudiandae asperiores consequuntur fugiat sunt libero nam!"</p>
+                                    <h3 class="text-roxo-800 m-0 text-sm lg:text-xl">Fabio Andrade Jr.</h3>
                                     <h5 class="text-neutral-800">Desenvolvedor Java</h5>
                                 </span>
                             </div>
@@ -218,7 +218,7 @@
                         <div class="card group bg-shop-butanta">
                             <div class="pelicula">
                                 <span class="text-card group-hover:opacity-100">
-                                    <h3 class="z-20 text-neutral-200 transition-all">Shopping Butantã</h3>
+                                    <h3 class="z-20 text-neutral-200 transition-all text-sm lg:text-xl">Shopping Butantã</h3>
                                     <p class="text-neutral-200">250m</p>
                                     <p class="text-neutral-200 text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maiores eveniet? Nobis ipsa facere aspernatur minus dignissimos nam, illo eaque consectetur, itaque illum quisquam aliquid aliquam quam pariatur iure totam?</p>
                                 </span>
@@ -227,7 +227,7 @@
                         <div class="card group bg-merc-pao-acucar">
                             <div class="pelicula">
                                 <span class="text-card group-hover:opacity-100">
-                                    <h3 class="z-20 text-neutral-200 transition-all">Mercado Pão de Açucar</h3>
+                                    <h3 class="z-20 text-neutral-200 transition-all text-sm lg:text-xl">Mercado Pão de Açucar</h3>
                                     <p class="text-neutral-200">140m</p>
                                     <p class="text-neutral-200 text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maiores eveniet? Nobis ipsa facere aspernatur minus dignissimos nam, illo eaque consectetur, itaque illum quisquam aliquid aliquam quam pariatur iure totam?</p>
                                 </span>
@@ -236,7 +236,7 @@
                         <div class="card group bg-merc-sams-club">
                             <div class="pelicula">
                                 <span class="text-card group-hover:opacity-100">
-                                    <h3 class="z-20 text-neutral-200 transition-all">Mercado Sam's Club</h3>
+                                    <h3 class="z-20 text-neutral-200 transition-all text-sm lg:text-xl">Mercado Sam's Club</h3>
                                     <p class="text-neutral-200">170m</p>
                                     <p class="text-neutral-200 text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maiores eveniet? Nobis ipsa facere aspernatur minus dignissimos nam, illo eaque consectetur, itaque illum quisquam aliquid aliquam quam pariatur iure totam?</p>
                                 </span>
@@ -245,7 +245,7 @@
                         <div class="card group bg-corr-onibus">
                             <div class="pelicula">
                                 <span class="text-card group-hover:opacity-100">
-                                    <h3 class="z-20 text-neutral-200 transition-all">Corredor de Ônibus</h3>
+                                    <h3 class="z-20 text-neutral-200 transition-all text-sm lg:text-xl">Corredor de Ônibus</h3>
                                     <p class="text-neutral-200">80m</p>
                                     <p class="text-neutral-200 text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maiores eveniet? Nobis ipsa facere aspernatur minus dignissimos nam, illo eaque consectetur, itaque illum quisquam aliquid aliquam quam pariatur iure totam?</p>
                                 </span>

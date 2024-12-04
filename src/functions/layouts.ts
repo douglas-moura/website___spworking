@@ -56,20 +56,20 @@ export const rodapeInfos = (): HTMLElement => {
     sessao.innerHTML += 
         `
             <div class="container text-center mb-8 lg:px-28">
-                <img src="${logoSrc}" alt="" class="mx-auto w-5/6 lg:w-2/6">
-                <h2 class="text-neutral-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem tenetur quaerat eum illo temporibus</h2>
+                <img src="${logoSrc}" alt="" class="mx-auto w-3/6 lg:w-2/6">
+                <h2 class="text-neutral-400 text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem tenetur quaerat eum illo temporibus</h2>
             </div>
-            <div class="container grid-cols-4 w-3/4 lg:w-1/4">
-                <a href="https://www.linkedin.com/company/spworkingcoworking/" target="_blank">
+            <div class="container grid-cols-4 gap-0 w-3/4 lg:w-1/4">
+                <a href="https://www.linkedin.com/company/spworkingcoworking/" target="_blank" class="flex">
                     <iconify-icon icon="tabler:brand-linkedin" height="1.5rem" class="m-auto border-2 border-verde-500 text-verde-500 p-2 rounded-full cursor-pointer"></iconify-icon>
                 </a>
-                <a href="https://www.instagram.com/spworking/" target="_blank">
+                <a href="https://www.instagram.com/spworking/" target="_blank" class="flex">
                     <iconify-icon icon="tabler:brand-instagram" height="1.5rem" class="m-auto border-2 border-verde-500 text-verde-500 p-2 rounded-full cursor-pointer"></iconify-icon>
                 </a>
-                <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank">
+                <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank" class="flex">
                     <iconify-icon icon="tabler:brand-whatsapp" height="1.5rem" class="m-auto border-2 border-verde-500 text-verde-500 p-2 rounded-full cursor-pointer"></iconify-icon>
                 </a>
-                <a href="mailto:contato@spworking.com.br" target="_blank">
+                <a href="mailto:contato@spworking.com.br" target="_blank" class="flex">
                     <iconify-icon icon="tabler:mail" height="1.5rem" class="m-auto border-2 border-verde-500 text-verde-500 p-2 rounded-full cursor-pointer"></iconify-icon>
                 </a>
             </div>

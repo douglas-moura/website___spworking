@@ -26,11 +26,11 @@
     }
 
     h1 {
-        @apply text-3xl mb-8 lg:text-4xl
+        @apply text-2xl leading-6 mb-8 lg:text-4xl lg:leading-10
     }
 
     h2 {
-        @apply text-2xl
+        @apply text-xl lg:text-2xl
     }
 
     h3 {
@@ -58,7 +58,7 @@
     }
 
     p, label {
-        @apply text-neutral-400 text-base mb-4
+        @apply text-neutral-400 text-sm mb-4 lg:text-base
     }
 
     label {
@@ -136,7 +136,7 @@
     }
 
     .slide {
-        @apply relative m-[20px] border border-roxo-800 min-w-[250px] max-w-[250px] lg:min-w-[400px] lg:max-w-[440px]
+        @apply relative m-[20px] border border-roxo-800 min-w-[200px] max-w-[250px] lg:min-w-[400px] lg:max-w-[440px]
     }
 
     .card {
