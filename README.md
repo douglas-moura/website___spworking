@@ -14,8 +14,17 @@ O site foi projetado para atender às seguintes necessidades:
 
 - **Páginas principais**: 
   - **Home:** Introdução ao SPWorking e seus serviços.
+    - Banner
+    - Vantagens e sobre o coworking
+    - Tipos de espaços e serviços
+    - Galeria
+    - Comentários de clientes
+    - Localização
+    - Formulário da newsletter
   - **Planos:** Informações detalhadas sobre os planos oferecidos.
-  - **Contato:** Formulário de contato e endereço.
+    - Planos e preços disponíveis
+    - Perguntas frequentes
+    - Formulário de dúvidas
     
 - **Organização do Código**:
   - **/src**                - Diretório principal do código-fonte.                                                                    
