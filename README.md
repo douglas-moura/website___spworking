@@ -18,6 +18,7 @@ O site foi projetado para atender às seguintes necessidades:
   - **Contato:** Formulário de contato e endereço.
     
 - **Organização do Código**:
+  | Tecnologia               | Descrição 
   |--------------------------|-------------------------------------------------------------------------------------------------------------|
   |- **/src**                |   # Diretório principal do código-fonte.                                                                    |
   |     **/assets**          |  # Recursos estáticos como imagens, ícones, e arquivos de estilo.                                           |
