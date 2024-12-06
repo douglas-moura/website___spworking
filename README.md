@@ -44,7 +44,7 @@ O site foi projetado para atender às seguintes necessidades:
   - **package.json**        - Arquivo que gerencia as dependências, scripts e metadados do projeto.
  
   
-      - ├── src/                      # Diretório principal do código-fonte
+        - ├── src/                      # Diretório principal do código-fonte
       │   ├── assets/               # Recursos estáticos como imagens e arquivos de estilo
       │   │   ├── css/              # Arquivo principal de estilização
       │   │   │   └── style.css     # Arquivo CSS principal
