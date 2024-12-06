@@ -47,29 +47,17 @@ O site foi projetado para atender às seguintes necessidades:
         ├── src/                      # Diretório principal do código-fonte
         │   ├── assets/               # Recursos estáticos como imagens e arquivos de estilo
         │   │   ├── css/              # Arquivo principal de estilização
-        │   │   │   └── style.css     # Arquivo CSS principal
         │   │   ├── img/              # Imagens utilizadas no site
-        │   │   │   └── logo.png      # Exemplo de imagem
-        │   │   └── icons/            # Ícones SVG ou outros
-        │   │       └── icon.svg      # Exemplo de ícone
         │   ├── functions/            # Código TypeScript modular
-        │   │   ├── api.ts            # Exemplo de função para chamadas de API
-        │   │   ├── helpers.ts        # Funções auxiliares
-        │   │   └── validations.ts    # Funções de validação
         │   ├── pages/                # Arquivos HTML adicionais
-        │   │   ├── about.html        # Página 'Sobre'
-        │   │   └── contact.html      # Página 'Contato'
         │   ├── index.ts              # Arquivo principal de lógica TypeScript
         │   └── index.html            # Página inicial do site
         ├── dist/                     # Diretório gerado pelo Webpack para produção
-        │   ├── css/                  # Arquivos CSS otimizados
-        │   │   └── style.min.css     # Arquivo CSS minificado
         │   ├── img/                  # Imagens otimizadas
-        │   │   └── logo-optimized.png
         │   ├── pages/                # Páginas HTML otimizadas
-        │   │   ├── about.min.html    # Página 'Sobre' minificada
-        │   │   └── contact.min.html  # Página 'Contato' minificada
-        │   ├── bundle.js             # Arquivo JavaScript empacotado pelo Webpack
+        │   ├── index.css             # Arquivo CSS otimizados
+        │   ├── index.js              # Arquivo JavaScript empacotado pelo Webpack
+        │   └── dd42591fdae4...ts     # Página TypeScript empacotado pelo Webpack
         │   └── index.html            # Página inicial otimizada
         ├── node_modules/             # Dependências instaladas via npm
         ├── webpack.config.js         # Configuração do Webpack
