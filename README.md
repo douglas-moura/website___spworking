@@ -79,9 +79,9 @@ O site foi projetado para atender às seguintes necessidades:
 Este projeto está licenciado sob a MIT License.
 
 
-- ├── src/                      # Diretório principal do código-fonte
-- │   ├── assets/               # Recursos estáticos como imagens e arquivos de estilo
-- │   │   ├── css/              # Arquivo principal de estilização
+      - ├── src/                      # Diretório principal do código-fonte
+      - │   ├── assets/               # Recursos estáticos como imagens e arquivos de estilo
+      - │   │   ├── css/              # Arquivo principal de estilização
 │   │   │   └── style.css     # Arquivo CSS principal
 │   │   ├── img/              # Imagens utilizadas no site
 │   │   │   └── logo.png      # Exemplo de imagem
