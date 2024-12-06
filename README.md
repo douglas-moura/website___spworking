@@ -38,7 +38,7 @@ O site foi projetado para atender às seguintes necessidades:
   - **/dist**               - Diretório de saída gerado pelo Webpack para distribuição.
     - **/img**              - Contém imagens otimizadas e renomeadas.
     - **/pages**            - Páginas HTML otimizadas.                                                                                
-  - **node_modules**       - Dependências gerenciadas pelo npm.                                                                           
+  - **/node_modules**       - Dependências gerenciadas pelo npm.                                                                           
   - **tailwind.config.js**  - Configuração personalizada do Tailwind CSS.                                                             
   - **webpack.config.js**   - Configuração do Webpack para empacotamento do projeto.                                                  
   - **package.json**        - Arquivo que gerencia as dependências, scripts e metadados do projeto.                                   
