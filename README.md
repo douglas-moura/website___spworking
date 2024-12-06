@@ -27,22 +27,6 @@ O site foi projetado para atender às seguintes necessidades:
     - Formulário de dúvidas
     
 - **Organização do Código**:
-  - **/src**                - Diretório principal do código-fonte.                                                                    
-    - **/assets**           - Recursos estáticos como imagens, ícones, e arquivos de estilo.                                          
-      - **/css**            - Contém o arquivo principal de estilização.                                                     
-      - **/img**            - Imagens utilizadas no site.
-    - **/functions**        - Código TypeScript com funcionalidades específicas para o projeto.
-    - **/pages**            - Arquivos HTML adicionais, utilizados para estruturar outras páginas do site.
-    - **index.ts**         - Arquivo principal de lógica em TypeScript para interatividade e funcionalidades dinâmicas.
-    - **index.html**       - Arquivo principal HTml e página inicial do site.                                                        
-  - **/dist**               - Diretório de saída gerado pelo Webpack para distribuição.
-    - **/img**              - Contém imagens otimizadas e renomeadas.
-    - **/pages**            - Páginas HTML otimizadas.                                                                                
-  - **/node_modules**       - Dependências gerenciadas pelo npm.                                                                           
-  - **tailwind.config.js**  - Configuração personalizada do Tailwind CSS.                                                             
-  - **webpack.config.js**   - Configuração do Webpack para empacotamento do projeto.                                                  
-  - **package.json**        - Arquivo que gerencia as dependências, scripts e metadados do projeto.
-
   
         ├── src/                      # Diretório principal do código-fonte
         │   ├── assets/               # Recursos estáticos como imagens e arquivos de estilo
@@ -55,9 +39,9 @@ O site foi projetado para atender às seguintes necessidades:
         ├── dist/                     # Diretório gerado pelo Webpack para produção
         │   ├── img/                  # Imagens otimizadas
         │   ├── pages/                # Páginas HTML otimizadas
+        │   └── dd42591fdae4...ts     # Página TypeScript empacotado pelo Webpack
         │   ├── index.css             # Arquivo CSS otimizados
         │   ├── index.js              # Arquivo JavaScript empacotado pelo Webpack
-        │   └── dd42591fdae4...ts     # Página TypeScript empacotado pelo Webpack
         │   └── index.html            # Página inicial otimizada
         ├── node_modules/             # Dependências instaladas via npm
         ├── webpack.config.js         # Configuração do Webpack
