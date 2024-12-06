@@ -1,6 +1,6 @@
 import { Plano, Servico } from "./interfaces"
 
-const logoSrc = '../img/5b43d2e7a72e4336b5bb.png'
+const logoSrc = './img/5b43d2e7a72e4336b5bb.png'
 
 export const menu = (): HTMLElement => {
     const sessao = document.createElement('section')
