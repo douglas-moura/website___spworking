@@ -47,7 +47,7 @@ O site foi projetado para atender às seguintes necessidades:
         ├── webpack.config.js         # Configuração do Webpack
         ├── tailwind.config.js        # Configuração do Tailwind CSS
         ├── package.json              # Gerencia dependências e scripts
-        └── package-lock.json         # Versões bloqueadas das dependências                               
+        └── package-lock.json         # Versões bloqueadas das dependências
 
 ## Tecnologias Utilizadas
 
