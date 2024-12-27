@@ -1281,10 +1281,10 @@ input, textarea{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 .bg-corr-onibus{
-  background-image: url(img/5c9f1e8ac507defceae2.jpg);
+  background-image: url(img/ponto-onibus.jpg);
 }
 .bg-escritorio-banner{
-  background-image: url(img/78efbad0ee46aa5a11f1.jpg);
+  background-image: url(img/spw-espaco-sala-compartilhadas-01.jpg);
 }
 .bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -1293,13 +1293,13 @@ input, textarea{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 .bg-merc-pao-acucar{
-  background-image: url(img/141f4b02daa936f25bc7.jpg);
+  background-image: url(img/pao-de-acucar.jpg);
 }
 .bg-merc-sams-club{
-  background-image: url(img/00cb3ba517c3c41c606b.jpg);
+  background-image: url(img/sams-club.jpg);
 }
 .bg-shop-butanta{
-  background-image: url(img/f3714085fe77cb10ad57.webp);
+  background-image: url(img/butanta-shopping.webp);
 }
 .from-\[\#00000001\]{
   --tw-gradient-from: #00000001 var(--tw-gradient-from-position);

@@ -3,6 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
+    mode: 'development',
+    //mode: 'production',
     entry: './src/index.ts',                                            // arquivo de entrada
     output: {
         filename: 'index.js',                                          // arquivo de saida
@@ -37,7 +39,7 @@ module.exports = {
                 test: /\.(png|jpg|jpeg|gif|svg|webp)$/,                 // Processa imagens
                 type: 'asset/resource',
                 generator: {
-                    filename: 'img/[hash][ext][query]',                 // Define o nome do arquivo final
+                    filename: 'img/[name][ext]',                 // Define o nome do arquivo final
                 }
             },
             {
@@ -64,7 +66,6 @@ module.exports = {
             filename: 'index.css'                                       // Nome do arquivo de saida
         })
     ],
-    mode: 'development',
     devServer: {
         static: './dist',
         port: '3000'

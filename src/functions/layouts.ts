@@ -1,15 +1,15 @@
 import { Plano, Servico } from "./interfaces"
 
-const logoSrc = './img/5b43d2e7a72e4336b5bb.png'
+//const logoSrc = './img/logo-spworking.png'
 
 export const menu = (): HTMLElement => {
-    const sessao = document.createElement('section')
+    const sessao: HTMLElement = document.createElement('section')
     sessao.classList.add('py-6')
 
     sessao.innerHTML +=
         `
             <nav class="container grid-cols-2 lg:grid-cols-3">
-                <img src="${logoSrc}" alt="Logotipo SPWorking" class="h-6 cursor-pointer my-auto">
+                <img src="./img/logo-spworking-branco.png" alt="Logotipo SPWorking" loading="lazy" class="h-6 my-auto cursor-pointer">
 
                 <!-- menu mobile -->
                 <span class="justify-end lg:hidden">
@@ -56,7 +56,7 @@ export const rodapeInfos = (): HTMLElement => {
     sessao.innerHTML += 
         `
             <div class="container text-center mb-8 lg:px-28">
-                <img src="${logoSrc}" alt="" class="mx-auto w-3/6 lg:w-2/6">
+                <img src="./img/logo-spworking-branco.png" alt="Logotipo SPWorking" loading="lazy" class="mx-auto w-3/6 lg:w-2/6">
                 <h2 class="text-neutral-400 text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem tenetur quaerat eum illo temporibus</h2>
             </div>
             <div class="container grid-cols-4 gap-0 w-3/4 lg:w-1/4">
