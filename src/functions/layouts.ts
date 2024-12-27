@@ -6,10 +6,12 @@ export const menu = (): HTMLElement => {
     const sessao: HTMLElement = document.createElement('section')
     sessao.classList.add('py-6')
 
+    const raiz = window.location.pathname.includes('pages') ? '../' : './'
+
     sessao.innerHTML +=
         `
             <nav class="container grid-cols-2 lg:grid-cols-3">
-                <img src="./img/logo-spworking-branco.png" alt="Logotipo SPWorking" loading="lazy" class="h-6 my-auto cursor-pointer">
+                <img src="${raiz}img/logo-spworking-branco.png" alt="Logotipo SPWorking" loading="lazy" class="h-6 my-auto cursor-pointer">
 
                 <!-- menu mobile -->
                 <span class="justify-end lg:hidden">
@@ -53,10 +55,13 @@ export const rodapeInfos = (): HTMLElement => {
     const sessao = document.createElement('section')
     sessao.classList.add('bg-neutral-800')
 
+    const raiz = window.location.pathname.includes('pages') ? '../' : './'
+    console.log(raiz)
+    
     sessao.innerHTML += 
         `
             <div class="container text-center mb-8 lg:px-28">
-                <img src="./img/logo-spworking-branco.png" alt="Logotipo SPWorking" loading="lazy" class="mx-auto w-3/6 lg:w-2/6">
+                <img src="${raiz}img/logo-spworking-branco.png" alt="Logotipo SPWorking" loading="lazy" class="mx-auto w-3/6 lg:w-2/6">
                 <h2 class="text-neutral-400 text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem tenetur quaerat eum illo temporibus</h2>
             </div>
             <div class="container grid-cols-4 gap-0 w-3/4 lg:w-1/4">
