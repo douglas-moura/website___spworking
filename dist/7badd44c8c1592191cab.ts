@@ -36,7 +36,7 @@ if (window.location.pathname == '/') {
         galeriaImagens[i].addEventListener('click', () => abrirImagem(galeriaImagens[i].attributes[2].value, galeriaImagens[i].attributes[1].value));
     }
 }
-if (window.location.pathname == '/pages/planos.html') {
+if (window.location.pathname.includes('/pages/planos.html')) {
     const planosContainer = document.getElementById('planos-container');
     const blocoFAQ = document.getElementById('faq-bloco');
     for (let index = 0; index < planos.length; index++) {

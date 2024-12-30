@@ -56,7 +56,7 @@ if (window.location.pathname == '/') {
 
 
 // FUNCIONALIDADES DA PÁGINA PLANOS
-if (window.location.pathname == '/pages/planos.html') {
+if (window.location.pathname.includes('/pages/planos.html')) {
     const planosContainer = document.getElementById('planos-container') as HTMLDivElement
     const blocoFAQ = document.getElementById('faq-bloco') as HTMLDivElement
 
