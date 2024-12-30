@@ -115,6 +115,10 @@ xl      1280px      @media (min-width: 1280px) { ... }
         @apply rounded shadow-lg overflow-hidden
     }
 
+    .bloco-tipos-espacos picture {
+        @apply aspect-square bg-neutral-200
+    }
+
     .bloco-tipos-espacos span {
         @apply p-4 bg-white relative h-full
     }
@@ -139,12 +143,44 @@ xl      1280px      @media (min-width: 1280px) { ... }
         @apply shadow-lg min-h-52 cursor-pointer
     }
 
+    .bloco-galeria img {
+        @apply img-galeria w-full object-center object-cover
+    }
+
     .pelicula {
         @apply z-10 p-8 absolute w-full h-full top-0 left-0 bg-[#00000000] transition-all duration-150 group-hover:bg-gradient-to-b from-[#000000e1] from-40% to-[#0000001a]
     }
 
     .slide {
         @apply relative m-[20px] border border-roxo-800 min-w-[200px] max-w-[250px] lg:min-w-[400px] lg:max-w-[400px]
+    }
+
+    .slide-seta {
+        @apply text-roxo-800 scale-75 select-none absolute z-20 cursor-pointer top-40 lg:top-20 lg:scale-100
+    }
+
+    .slide-gradiente-esq {
+        @apply select-none absolute z-10 cursor-default h-full bg-gradient-to-r from-verde-300 from-50% to-[#00000001] left-0 w-8 lg:-left-10 lg:w-20
+    }
+
+    .slide-gradiente-dir {
+        @apply select-none absolute z-10 cursor-default h-full bg-gradient-to-r from-[#00000001] to-verde-300 to-50% right-0 w-8 lg:-right-10 lg:w-20
+    }
+
+    .slide-cliente-img {
+        @apply aspect-square shadow-xl absolute w-24 -top-[10px] -left-[10px] lg:-top-[20px] lg:-left-[20px] lg:w-32
+    }
+
+    .slide-cliente-box {
+        @apply flex-col mt-24 p-4 lg:ml-28 lg:mt-0 lg:p-8
+    }
+
+    .slide-cliente-texto {
+        @apply text-neutral-800 text-xs break-all italic lg:text-sm
+    }
+
+    .slide-cliente-nome {
+        @apply text-roxo-800 m-0 text-sm lg:text-xl
     }
 
     .card {
