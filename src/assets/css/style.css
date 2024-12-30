@@ -144,7 +144,7 @@ xl      1280px      @media (min-width: 1280px) { ... }
     }
 
     .bloco-galeria img {
-        @apply img-galeria w-full object-center object-cover
+        @apply w-full object-center object-cover
     }
 
     .pelicula {
