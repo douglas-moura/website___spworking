@@ -6,23 +6,23 @@ export const menu = (): HTMLElement => {
     const sessao: HTMLElement = document.createElement('section')
     sessao.classList.add('py-6')
 
-    const raiz = window.location.pathname.includes('pages') ? '../' : './'
+    const raiz = window.location.pathname.includes('pages') ? '..' : '.'
 
     sessao.innerHTML +=
         `
             <nav class="container grid-cols-2 lg:grid-cols-3">
-                <img src="${raiz}img/logo-spworking-branco.png" alt="Logotipo SPWorking" loading="lazy" class="h-6 my-auto cursor-pointer">
+                <img src="${raiz}/img/logo-spworking-branco.png" alt="Logotipo SPWorking" loading="lazy" class="h-6 my-auto cursor-pointer">
 
                 <!-- menu mobile -->
                 <span class="justify-end lg:hidden">
                     <iconify-icon icon="tabler:menu-2" height="1rem" class="text-neutral-200 p-2" id="abrir-menu-mobile"></iconify-icon>
                     <ul id="mobile-menu-lista" class="absolute top-0 left-0 bg-white h-dvh text-neutral-800 p-8 w-full -translate-x-full transition-all">
                         <iconify-icon icon="tabler:x" height="2rem" class="mb-8 w-full text-verde-700" id="fechar-menu-mobile"></iconify-icon>
-                        <li class="mb-6"><a href="/#banner">Home</a></li>
-                        <li class="mb-6"><a href="/#servicos">Serviços</a></li>
-                        <li class="mb-6"><a href="/#galeria">Galeria</a></li>
-                        <li class="mb-6"><a href="/#localizacao">Localização</a></li>
-                        <li class="mb-6"><a href="pages/planos.html">Planos</a></li>
+                        <li class="mb-6"><a href="${raiz}/index.html#banner">Home</a></li>
+                        <li class="mb-6"><a href="${raiz}/index.html#servicos">Serviços</a></li>
+                        <li class="mb-6"><a href="${raiz}/index.html#galeria">Galeria</a></li>
+                        <li class="mb-6"><a href="${raiz}/index.html#localizacao">Localização</a></li>
+                        <li class="mb-6"><a href="${raiz}/pages/planos.html">Planos</a></li>
                         <li class="">
                             <span class="text-sm items-center">
                                 <iconify-icon icon="tabler:brand-whatsapp" height="1rem" class="mr-2 bg-[#25D366] rounded-full p-2"></iconify-icon>
@@ -34,11 +34,11 @@ export const menu = (): HTMLElement => {
 
                 <!-- menu desktop -->
                 <ul class="items-center h-full justify-between text-white col-span-2 hidden lg:inline-flex">
-                    <li class="text-sm xl:text-base 2xl:text-sm"><a href="/#banner">Home</a></li>
-                    <li class="text-sm xl:text-base 2xl:text-sm"><a href="/#servicos">Serviços</a></li>
-                    <li class="text-sm xl:text-base 2xl:text-sm"><a href="/#galeria">Galeria</a></li>
-                    <li class="text-sm xl:text-base 2xl:text-sm"><a href="/#localizacao">Localização</a></li>
-                    <li class="text-sm xl:text-base 2xl:text-sm"><a href="pages/planos.html">Planos</a></li>
+                    <li class="text-sm xl:text-base 2xl:text-sm"><a href="${raiz}/index.html#banner">Home</a></li>
+                    <li class="text-sm xl:text-base 2xl:text-sm"><a href="${raiz}/index.html#servicos">Serviços</a></li>
+                    <li class="text-sm xl:text-base 2xl:text-sm"><a href="${raiz}/index.html#galeria">Galeria</a></li>
+                    <li class="text-sm xl:text-base 2xl:text-sm"><a href="${raiz}/index.html#localizacao">Localização</a></li>
+                    <li class="text-sm xl:text-base 2xl:text-sm"><a href="${raiz}/pages/planos.html">Planos</a></li>
                     <li class="text-sm xl:text-base 2xl:text-sm">
                         <span class="ml-4 items-center text-sm xl:text-base 2xl:text-sm">
                             <iconify-icon icon="tabler:brand-whatsapp" height="1rem" class="mr-2 bg-[#25D366] rounded-full p-2"></iconify-icon>
@@ -55,13 +55,13 @@ export const rodapeInfos = (): HTMLElement => {
     const sessao = document.createElement('section')
     sessao.classList.add('bg-neutral-800')
 
-    const raiz = window.location.pathname.includes('pages') ? '../' : './'
+    const raiz = window.location.pathname.includes('pages') ? '..' : '.'
     console.log(raiz)
     
     sessao.innerHTML += 
         `
             <div class="container text-center mb-8 lg:px-28">
-                <img src="${raiz}img/logo-spworking-branco.png" alt="Logotipo SPWorking" loading="lazy" class="mx-auto w-3/6 lg:w-2/6">
+                <img src="${raiz}/img/logo-spworking-branco.png" alt="Logotipo SPWorking" loading="lazy" class="mx-auto w-3/6 lg:w-2/6">
                 <h2 class="text-neutral-400 text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem tenetur quaerat eum illo temporibus</h2>
             </div>
             <div class="container grid-cols-4 gap-0 w-3/4 lg:w-1/4">
@@ -78,7 +78,7 @@ export const rodapeInfos = (): HTMLElement => {
                     <iconify-icon icon="tabler:mail" height="1.5rem" class="m-auto border-2 border-verde-500 text-verde-500 p-2 rounded-full cursor-pointer"></iconify-icon>
                 </a>
             </div>
-            <script src="../index.ts"></script>
+            <script src="${raiz}/index.js"></script>
         `
     return sessao
 }
